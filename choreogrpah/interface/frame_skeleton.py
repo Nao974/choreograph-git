@@ -1,12 +1,13 @@
 from tkinter.messagebox import *
+from tkinter import *
 
-from _mboxe.interface import *
-from _servo_serial.interface import *
-import constants as g
+# from _mboxe.interface import *
+# from servoserial.interface import *
+import common.constants as g
 
-from _mboxe.mboxe_dummy import *
-from _servo_pwm.servo_pwm import *
-from _servo_serial.servo_serial_dummy import *
+from servomboxe.mboxe_dummy import *
+from servopwm.servo_pwm import *
+from servoserial.servo_serial_dummy import *
 
 from PIL import Image, ImageTk  # pip install pillow
 
@@ -30,19 +31,19 @@ class Frame_Skeleton(Canvas):
             Label(frame_skeleton, text="{}: {}".format(self.lang['File'], name_file)).grid(column=self.frame_column, row=self.frame_row, pady=2, padx=5, sticky=W)
             self.frame_row += 1
             imh = {}
-            imh['pi'] = ImageTk.PhotoImage(Image.open('images/pi.png'))
-            imh['pi_b'] = ImageTk.PhotoImage(Image.open('images/pi_b.png'))
-            imh['pi_3'] = ImageTk.PhotoImage(Image.open('images/pi_3.png'))
-            imh['pi_4'] = ImageTk.PhotoImage(Image.open('images/pi_4.png'))
-            imh['arduino'] = ImageTk.PhotoImage(Image.open('images/arduino.png'))
-            imh['arduino_nano'] = ImageTk.PhotoImage(Image.open('images/arduino_nano.png'))
-            imh['arduino_uno'] = ImageTk.PhotoImage(Image.open('images/arduino_uno.png'))
-            imh['arduino_mega'] = ImageTk.PhotoImage(Image.open('images/arduino_mega.png'))
-            imh['servo_pwm'] = ImageTk.PhotoImage(Image.open('images/servo_pwm.png'))
-            imh['servo_serial'] = ImageTk.PhotoImage(Image.open('images/servo_serial.png'))
-            imh['mboxe_a'] = ImageTk.PhotoImage(Image.open('images/mboxe.png'))
-            imh['mboxe_b'] = ImageTk.PhotoImage(Image.open('images/mboxe.png'))
-            imh['servo_pwm'] = ImageTk.PhotoImage(Image.open('images/servo_pwm.png'))
+            imh['pi'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/pi.png'))
+            imh['pi_b'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/pi_b.png'))
+            imh['pi_3'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/pi_3.png'))
+            imh['pi_4'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/pi_4.png'))
+            imh['arduino'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/arduino.png'))
+            imh['arduino_nano'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/arduino_nano.png'))
+            imh['arduino_uno'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/arduino_uno.png'))
+            imh['arduino_mega'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/arduino_mega.png'))
+            imh['servo_pwm'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/servo_pwm.png'))
+            imh['servo_serial'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/servo_serial.png'))
+            imh['mboxe_a'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/mboxe.png'))
+            imh['mboxe_b'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/mboxe.png'))
+            imh['servo_pwm'] = ImageTk.PhotoImage(Image.open('choreogrpah/images/servo_pwm.png'))
 
             g.controllers_memory = g.skeleton_memory.get('controller')
             motorgroups = g.skeleton_memory.get('motorgroups')

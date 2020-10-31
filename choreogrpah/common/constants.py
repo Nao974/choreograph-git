@@ -1,3 +1,5 @@
+current_path = ''
+
 flag_key = 0
 
 system = ''

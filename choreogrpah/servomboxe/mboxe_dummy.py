@@ -1,6 +1,6 @@
 import struct
 import time
-from _mboxe.Ah_I2C_dummy import Ah_I2C
+from servomboxe.Ah_I2C_dummy import Ah_I2C
 
 from random import randint
 

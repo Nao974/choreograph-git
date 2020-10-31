@@ -1,5 +1,5 @@
 from tkinter import *
-import constants as g
+import common.constants as g
 
 class win_tools(Toplevel):
     def __init__(self, interface, **kwargs):

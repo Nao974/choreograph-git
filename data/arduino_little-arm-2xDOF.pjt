@@ -2,7 +2,7 @@
  "detail":
 	{
 	"description": "blablabl",
-	"filepath": "../_projects/arduino_little-arm-2xDOF/",
+	"filepath": "./data/arduino_little-arm-2xDOF/",
 	"view": "view.jpg",
 	"skeleton": "arduino_little-arm-2xDof.skt",
 	"position": "positions",

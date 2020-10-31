@@ -2,7 +2,7 @@
  "detail":
 	{
 	"description": "blablabl",
-	"filepath": "../_projects/otto/",
+	"filepath": "./data/otto/",
 	"view": "view.jpg",
 	"skeleton": "otto.skt",
 	"position": "positions",

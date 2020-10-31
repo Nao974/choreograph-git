@@ -3,7 +3,7 @@ import struct
 import time
 
 import serial  # install: pip install pyserial
-import constants as g
+import common.constants as g
 
 
 class Spwm():

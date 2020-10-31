@@ -3,7 +3,7 @@ import tkinter.ttk as ttk
 from PIL import Image, ImageTk  # pip install pillow
 import os
 import time
-import constants as g
+import common.constants as g
 
 class Frame_Controller(Canvas):
     def __init__(self, interface, **kwargs):

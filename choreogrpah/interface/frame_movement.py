@@ -9,7 +9,7 @@ import os
 from tkinter.messagebox import askyesno
 import time
 
-import constants as g
+import common.constants as g
 
 class Frame_Movement(Canvas):
 

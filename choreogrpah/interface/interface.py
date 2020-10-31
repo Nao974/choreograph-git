@@ -1,20 +1,18 @@
-from frame_skeleton import *
-from frame_interactive import *
-from frame_movement import *
-# from frame_tracker import *
-from frame_controller import *
-from win_tools import *
-from lang_EN import *
-from lang_FR import *
-import constants as g
+from interface.frame_skeleton import *
+from interface.frame_interactive import *
+from interface.frame_movement import *
+# from interface.frame_tracker import *
+from interface.frame_controller import *
+from wintools.win_tools import *
+from common.lang_EN import *
+from common.lang_FR import *
+from servomboxe.mboxe_dummy import *
+import common.constants as g
 
 from os import path
-from _mboxe.mboxe_dummy import *
 import json
 from collections import OrderedDict
-
 from tkinter import *
-
 from PIL import Image, ImageTk  # pip install pillow
 
 class Interface:
@@ -47,6 +45,8 @@ class Interface:
         g.bind_key.set(0)
         g.catch_exception.set(0)
 
+        g.current_path = os.getcwd()
+
         self.tab_interactive = Frame_Interactive(self)
         # self.windows.bind('<Key>', self.keyPressed)
 
@@ -62,6 +62,8 @@ class Interface:
         print("---------------------------")
         print("%s: %s-%s" % (self.lang['System'], g.system[0], g.system[1]) )
         print("---------------------------")
+        print("%s\n" % g.current_path)
+
 
     def add_frames(self):
         if self.frame_set == 0:
@@ -166,7 +168,7 @@ class Interface:
                 print('\033[31m {}'.format(type(e)))
                 print('{} \033[0m'.format(str(e)))
             else:
-                print('\033[31m {} \033[0m'.format(self.lang['Cancel or Error in file management']))
+                print('\033[31m {}:{} \033[0m'.format(self.lang['Cancel or Error in file management'],self.filepath_skeleton))
 
         if name_file != '':
             try:

@@ -1,8 +1,8 @@
 from tkinter.filedialog import *
 from tkinter.messagebox import *
 from PIL import Image, ImageTk  # pip install pillow
-from _mboxe.mboxe_dummy import *
-import constants as g
+from servomboxe.mboxe_dummy import *
+import common.constants as g
 import json
 
 class Frame_Interactive(Canvas):

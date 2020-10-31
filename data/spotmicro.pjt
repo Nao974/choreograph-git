@@ -2,7 +2,7 @@
  "detail":
 	{
 	"description": "Spotmicro - robot dog",
-	"filepath": "../_projects/spotmicro/",
+	"filepath": "./data/spotmicro/",
 	"view": "view.jpg",
 	"skeleton": "spotmicro.skt",
 	"position": "positions",

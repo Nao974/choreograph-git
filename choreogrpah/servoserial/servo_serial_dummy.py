@@ -1,6 +1,6 @@
 import struct
 import time
-from _servo_serial.serial_dummy import Ah_I2C
+from servoserial.serial_dummy import Ah_I2C
 
 from random import randint
 
