@@ -1,0 +1,19 @@
+{
+  "category": "WALK",
+  "name": "2p_1",
+  "description": "\n\n\n\n",
+  "motors": {
+    "fl_shoulder": "90",
+    "fl_arm": "170",
+    "fl_wrist": "30",
+    "fr_shoulder": "90",
+    "fr_arm": "140",
+    "fr_wrist": "60",
+    "bl_shoulder": "90",
+    "bl_arm": "140",
+    "bl_wrist": "60",
+    "br_shoulder": "90",
+    "br_arm": "170",
+    "br_wrist": "30"
+  }
+}

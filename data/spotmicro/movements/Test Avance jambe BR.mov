@@ -1,0 +1,56 @@
+{
+  "name": "Test Avance jambe BR",
+  "duration": 300,
+  "functions": {
+    "I001": {
+      "function": "Linear",
+      "position": "BASE_home",
+      "duration": 300,
+      "nb_step": 1
+    },
+    "I002": {
+      "function": "Linear",
+      "position": "HOME2WALK_BR1",
+      "duration": 300,
+      "nb_step": 1
+    },
+    "I003": {
+      "function": "Linear",
+      "position": "HOME2WALK_BR2",
+      "duration": 300,
+      "nb_step": 1
+    },
+    "I004": {
+      "function": "Linear",
+      "position": "HOME2WALK_BR3",
+      "duration": 300,
+      "nb_step": 1
+    },
+    "I005": {
+      "function": "Linear",
+      "position": "HOME2WALK_BR3",
+      "duration": 1000,
+      "nb_step": 3
+    },
+    "I006": {
+      "function": "Linear",
+      "position": "HOME2WALK_BR2",
+      "duration": 300,
+      "nb_step": 1
+    },
+    "I007": {
+      "function": "Linear",
+      "position": "HOME2WALK_BR1",
+      "duration": 300,
+      "nb_step": 1
+    },
+    "I008": {
+      "function": "Linear",
+      "position": "BASE_home",
+      "duration": 300,
+      "nb_step": 1
+    }
+  },
+  "id": "I003",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/!!! DIRP !!!/_SOURCE/Choregrpah_TK/PROJECTS/spotmicro/movements/Test Avance jambe BR.mov"
+}

@@ -1,0 +1,134 @@
+{
+  "name": "demo2",
+  "duration": 1000,
+  "functions": {
+    "I001": {
+      "function": "Linear",
+      "position": "BASE_home",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I002": {
+      "function": "Linear",
+      "position": "BASE_seated",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I003": {
+      "function": "Linear",
+      "position": "BASE_seated",
+      "duration": 2000,
+      "nb_step": 2
+    },
+    "I004": {
+      "function": "Linear",
+      "position": "WAVE_PAW_step1",
+      "duration": 500,
+      "nb_step": 0
+    },
+    "I005": {
+      "function": "Linear",
+      "position": "WAVE_PAW_gives-paw",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I006": {
+      "function": "Linear",
+      "position": "WAVE_PAW_gives-paw",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I007": {
+      "function": "Linear",
+      "position": "WAVE_PAW_step1",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I008": {
+      "function": "Linear",
+      "position": "BASE_seated",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I009": {
+      "function": "Linear",
+      "position": "BASE_get-up-from-sitting",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I00A": {
+      "function": "Linear",
+      "position": "BASE_get-up-from-sitting",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I00B": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-left",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I00C": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-right",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I00D": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-left",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I00E": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-right",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I012": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-left",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I013": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-right",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I014": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-left",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I015": {
+      "function": "Linear",
+      "position": "DOWN_ buttocks-on-the-right",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I016": {
+      "function": "Linear",
+      "position": "BASE_get-up-from-sitting",
+      "duration": 100,
+      "nb_step": 0
+    },
+    "I017": {
+      "function": "Linear",
+      "position": "BASE_get-up-from-sitting",
+      "duration": 500,
+      "nb_step": 0
+    },
+    "I018": {
+      "function": "Linear",
+      "position": "BASE_home",
+      "duration": 1000,
+      "nb_step": 1
+    }
+  },
+  "id": "I004",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/!!! DIRP !!!/_SOURCE/Choregrpah_TK/PROJECTS/spotmicro/movements/demo2.mov"
+}

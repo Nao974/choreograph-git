@@ -1,0 +1,503 @@
+﻿---------------------------
+  JoyToKey change history
+---------------------------
+
+Ver 6.4.2
+* Minor bug fixes
+
+
+Ver 6.4.1
+* Supported the association of profiles based on the target window title,
+  besides the file path of the target application.
+
+* ButtonAlias function - Support 3 button case
+
+* Improved the compatibility when used from a launcher application
+
+
+Ver 6.4
+* Supported repeat and toggle click in mouse absolute movement mode.
+
+
+Ver 6.3
+* User configuration data will be by default stored in
+  "JoyToKey" folder in user's "Documents" folder.
+
+  In case you upgrade JoyToKey from an older version, please copy (or move)
+  the old "JoyToKey" folder into your "Documents" folder (especially *.ini and *.cfg files)
+  so that you can continue to access your configuration data.
+
+* To be more friendly for new users,
+  - JoyToKey is packaged as an installer, instead of a zip file format
+  - Tab names in the button assignment window are made clearer
+    e.g. "Keyboard 2" -> "Keyboard (Multi)"
+  - UI Layout for assigning the mouse cursor movement is made easier
+
+* Minor changes and bug fixes
+
+
+Ver 6.2
+* Enhanced an execution of an external program to be able to
+  - pass command parameters
+  - specify the starting working directory
+
+* In the button assignment window, added small buttons to go to
+  the next and the previous assignment.
+	
+* In case JoyToKey is started when no controller is connected,
+  JoyToKey tries to automatically detect devices until one
+  controller is connected.
+
+  But some users may want to continue the auto detection until
+  two controllers are connected.  Or some user may want to
+  disable this auto detection completely.  From this version,
+  you can change the behaviour by changing the following line
+  in "JoyToKey.ini" file.
+
+  # in case you want to continue the auto-detection until two devices
+  AutoDetectDevicesUpTo=2
+
+  # in case you want to disable the auto-detection
+  AutoDetectDevicesUpTo=0
+
+  NOTE: Repeated auto-detection of devices while playing the game may
+  lead to a slight delay or input lag occasionally.  So this auto
+  detection should be only used for the number of devices which are
+  always connected.
+
+* Support up to max 50 joysticks (previously 32 joysticks)
+
+* Support up to max 128 buttons (previously 32 buttons)
+
+
+Ver 6.1.1
+* Supported multiple displays for the absolute movement of mouse cursor.
+
+* Important bug fix for version 6.x
+
+
+Ver 6.1
+* Supported an execution of an external program for a button assignment
+  Besides launching a program, you can also open an URL in the browser.
+  These functions enable you to use JoyToKey as a kind of launcher.
+
+* Supported a command line argument "-r"
+  When new joysticks are connected, there are a few ways to make
+  JoyToKey to recognize them. (e.g. one easy way is to click a JoyToKey
+  icon in the task tray)  This command line argument is another way to
+  trigger that: you can create a shortcut to execute "JoyToKey.exe -r",
+  and it'll force the already-running JoyToKey instance to refresh the
+  list of joystick devices.
+
+
+Ver 6.0
+* Supported additional key-code emulations such as the volume control,
+  media control (prev / next / play / stop), and SCROLL_LOCK.
+
+* Changed the default key emulation code for arrow keys, R-Alt and
+  R-Ctrl, to fix compatibility issue with recent Windows 10.
+  In case it causes a problem for certain games and you want to 
+  use the old key code, please select an equivalent key (from
+  right-click menu) which is labeled as "for DirectInput".
+
+* Refresh joystick connections whenever a task tray icon is clicked.
+  When you connect a new joystick to the PC, just click the task tray
+  icon to get it recognized (either left click or right click).
+
+* Ability to re-process the key emulation event when the same key 
+  continues during the processing of Input1-Input4 sequence (Keyboard 2).
+
+  By default, when processing the sequence of Input1 through Input4,
+  if the same key assignment continues, it's emulated only once.
+  In the example below, key "↓" will be only pressed once and will
+  be kept pressed until Input2 is released.
+
+  Input1 = "↓"
+  Input2 = "↓" + "→"
+
+  This behaviour can be changed from "Options" tab with the option:
+  "Re-process when the same key continues in sequence"
+
+* Misc bug fixes such as button highlighting
+
+
+Ver 5.9
+* Fixed a crash issue for some online games.
+
+* Enhanced "Keyboard2" page to support the followings:
+
+  - Supported the emulation of Input1 ~ Input4 in sequence at
+    the specified interval (hold duration).
+
+  - Supported different key assignment based on how many times
+    a button is pressed within the specified time threshold.
+
+  - Supported the key assignment when a button is released.
+
+  - Supported the definition of mouse cursor movement via right click
+    menu.  For example, this enables one button input to cycle through
+    up, right, down, left mouse cursor movement whenever it's pressed.
+
+* Supported a mouse horizontal wheel rotation
+
+* Improved the keycode emulation for the Numpad '/' and a few
+  other keys.
+
+* Miscellaneous configuration options were added for OneSwitch.org.uk
+  ex)
+  FontSizeProfileList=20
+  FontSizeButtonList=20
+  ProfileImageFullScreenRatio=1.0
+
+
+Ver 5.8.2
+* Increased the maximum number of joysticks from 16 to 32.
+
+
+Ver 5.8.1
+* Bug fix
+
+
+Ver 5.8
+* Enhanced the support for XBox360 controller.  For example,
+  - The silver guide button can be assigned as button 13
+  - Left/Right trigger can be assigned as analog input button 11, 12
+
+* Added support for XInput devices besides DirectInput devices.
+
+* Enhanced auto-repeat definition to support more flexible definition.
+  (for example, 1.2 times per second, or repeat every 2.5 second)
+
+* Added an ability to show an image file when an active profile is changed.
+  Image file can be registered in Options tab for each profile.
+
+* A few minor bug fixes
+
+
+Ver 5.7.1
+* Support "Numpad Enter" key assignment via right-click menu.
+
+* Support up to 4 POV inputs.
+
+* Enhanced the right-click menu on the joystick tab and on the button list
+  such that the selected configuration can be copied-to or pasted-from
+  a clipboard.
+
+* Enhanced device configuration to support axis mapping for all 8 axes.
+
+
+Ver 5.7
+* Support for an absolute mouse movement (a.k.a. spring mode)
+  Mouse cursor can be positioned at a configured center location and can
+  be moved within a specified range with an analog input stick. This can
+  be useful for an application like a flight simulator easier.
+
+  A regular button can be also used like a mouse shortcut by jumping the
+  mouse cursor to a preconfigured position, followed by a mouse click.
+
+* Exposed hidden parameter "AnalogDeadZone" (which is used for DirectInput
+  setup) in "Settings -> Configure Joysticks". If you want to minimize the
+  input threshold for your device, please try setting it to zero. If you
+  need a different threshold for Stick1 and Stick2, you can continue to do
+  so in "Options" tab for each profile.
+
+* Enhanced SHIFT key (virtual joystick) function to support delayed switch.
+  Combined with a "Button Number Mapping" feature, for example, one button
+  can be assigned for both a regular key input (for a short press) as well
+  as for a SHIFT function (for a long press).
+
+* Enhanced "Switch depending on how long the button is pressed" in Keyboard2.
+  In case the event emulation is not recognized reliably when you press
+  the button too quickly, JoyToKey can now hold it for a minimum duration.
+  (default 20 msec)
+
+* Other minor bug fixes
+
+
+Ver 5.6
+* Enhanced "Keyboard 2" functionality to support the followings
+  - support 4 keys per definition
+  - support the rotation of 4 input definitions
+  - support auto repeat and toggle configuration
+
+* Upgraded DirectX library version from 7 to 8.
+
+
+Ver 5.5.x
+* bug fixes
+
+
+Ver 5.5
+* Support "Button Alias (Number Mapping)"
+
+  Example Usage1:
+    Swap button numbers if the connected joystick has a different button
+    layout from your favorite one.
+
+  Example Usage2:
+    Associate Button21 with Button1 so that both functions are triggered
+    when Button1 is pressed.
+
+  Example Usage3:
+    It is also possible to configure some button (e.g. Button22) to be
+    triggered when both Button5 and Button6 are pressed simultaneously.
+
+* If some buttons are pressed when profile is changed or SHIFT function
+  is triggered, those button press are likely to trigger both old and new
+  assignments right before/after the switch.
+
+  It is now possible to define certain duration (e.g. 100 msec) to ignore
+  those inputs right after the switch (from preference menu)
+
+* When both mouse cursor movement and mouse click are assigned to a button,
+  click&hold will be processed before cursor movement.
+
+* Improved the reliability after resuming from PC sleep.
+
+* Preferences were moved from menu items to a separate window.
+
+* Added an ability to specify the number of buttons to configure.
+  (by default 16 buttons, MAX 32 buttons)
+
+* Changed the user interface font to Calibri
+
+* Configuration files are now saved in Unicode format (UTF8+BOM).
+  This may fix garbled character issues for the use of non-default
+  language.
+
+
+Ver 5.4.2
+* Fixed garbled characters for some non-Japanese PC and keyboard.
+
+* (only for advanced users)
+  Support specifying "JoyToKey.ini" file path via registry.
+  If you have any reason why you need to forcibly specify "JoyToKey.ini"
+  file path (e.g. you're using some launcher like Hyperlaunch), you can
+  do so via registry editor.
+  1. Run "regedit" program
+  2. Create a key "HKEY_CURRENT_USER\Software\JoyToKey"
+  3. Create a string value "IniFilePath=c:\whateverpath\JoyToKey.ini"
+
+
+Ver 5.4.1
+* Support various file formats (such as mp3) for sound notifications.
+
+
+Ver 5.4
+* Added an ability to play sound or show tasktray balloon when the
+  selected profile is changed.
+
+  - Tasktray balloon can be enabled from "Preferences" menu.
+
+  - Sound notification can be configured for each profile in "Options"
+    tab. (currently, only WAV files are supported)
+
+  For example, sound notification could be useful for visually impaired
+  users, while they step through different profiles to help them to pick
+  the right one.
+
+* The size of profile files is made smaller by eliminating empty lines.
+
+* In case "JoyToKey.ini" file or its directory is not write-able,
+  JoyToKey will try to make them write-able.
+
+
+Ver 5.3.1
+* Homepage URL was changed to http://joytokey.net/
+
+
+Ver 5.3.0
+* Support delayed input for a special function to switch profiles.
+  If you want to keep JoyToKey running while you're playing a game
+  which has a native joystick support, the followings may be useful.
+  - Temporarily switch to a profile, which is basically empty
+  - But it has one button assigned for switching back to the
+    original profile after being pressed for X seconds.
+
+* Control the behaviour when JoyToKey window is active from menu
+  "Preferences" ->
+    "Don't emulate keyboard input when JoyToKey window is active"
+  (by default true)
+
+
+Ver 5.2.3
+* Support emulation for 4th and 5th mouse button.
+  They could be useful if you're using mouse gestures with joysticks.
+
+* Turbo mode was enhanced to support up to x16 processing speed.
+  However, this is experimental and should not be used for regular use
+  as it's very CPU intensive and is likely to slow down the PC.
+
+
+Ver 5.2.2
+* Support for loading configuration files from a common AppData folder
+  when it exists. (e.g. C:\ProgramData\JoyToKey)
+
+* Added a new menu "Open file folder in Explorer"
+
+
+Ver 5.2.1
+* Bug fix: garbled characters for allow keys
+
+
+Ver 5.2.0
+* Support the combination of keyboard and mouse click
+  Ex) SHIFT+Click, CTRL+Click
+
+  In order to specify a mouse click in keyboard assignment window,
+  please right-click the entry box.
+
+* Bug fix: minor bug fix for 5.1.2
+
+
+Ver 5.1.2
+* Bug fix: SHIFT + arrow keys were not properly processed.
+
+
+Ver 5.1.1
+* Mouse cursor emulation with analog sticks is further improved.
+
+
+Ver 5.1.0
+* Mouse cursor emulation is now much smoother with analog sticks,
+  by using a continuous acceleration without a threshold.
+
+* In case analog stick input has been wrong, axis mapping can be
+  manually specified.
+  (Menu: "Preferences" -> "Configure joysticks")
+
+* In case you have multiple joysticks and want to always use one
+  of them as "Joystick 2" (or any other joystick number), you can
+  define a priority/preferred number for each device.
+  (Menu: "Preferences" -> "Configure joysticks")
+
+* Miscellaneous bug fixes.
+
+
+Ver 5.0.3
+* (Improvement) Re-detect joysticks after resuming from sleep.
+
+
+Ver 5.0.2
+* Bug fix: Preference "Highlight buttons when JoyToKey is active" was not
+  properly saved.
+
+
+Ver 5.0.1
+* Added a menu "Help -> Overview"
+* Added a button "Edit button assignment"
+* Minor bug fixes
+
+
+Ver 5.0
+* Support for different key assignments based on analog stick input level.
+
+* Support for different key assignments based on button hold duration.
+
+* Support for rotating key assignments.  For example, whenever the same
+  button is pressed, its key assignment can rotate like 
+  "A -> B -> A -> B -> A ..."
+
+* Enhanced auto-repeat key functionality.
+  The following auto-repeat definitions are newly possible:
+  - "1.5 repeats per second"
+  - "one repeat per 123.4 seconds"
+  - "auto-repeat only after 500 milli-seconds"
+
+* When the main window of JoyToKey is activated and joystick buttons are
+  pressed, those buttons will be highlighted in the main window so that
+  you can easily see which button corresponds to which row in the config.
+  (You can change it back to the old behaviour from menu setting)
+
+* When the window is minimized, icon will be kept in the taskbar by default.
+  If you prefer the old behavoir and want to hide it from taskbar, you can
+  change it back to the old behavior from settings menu.
+
+* Added a comment field for each button definition.
+  For example, you can record a memo like "This button is used for Jump".
+
+* Support for copying joystick configration from one to another.
+  Right-click "Joystick 1" header in the main menu, to open a popup menu.
+
+* Support for at maximum 4 key assignments for each button.
+
+* Various small bug fixes
+
+
+Ver 4.6
+* You can choose the default behavior when the target application switches 
+  to non-associated appliation.
+
+* When you temporarily switch to the virtual joystick configuration while 
+  some button is being pressed, the pressed state will be kept without 
+  release event if its original key config and the new key config are the
+  same.  (e.g. if the arrow key is assigned for both the original joystick1 
+  config and the virtual joystick3 config, then switching between joystick1 
+  and joystick3 won't trigger unnecessary release event)
+
+
+From ver 3.x to ver4.5.x
+* It became a shareware soft
+
+* Support for associating config files with applications
+  It can automatically switch active configuration file based on running 
+applications.
+
+* Support dynamic acceleration of mouse cursor movement
+  If you use mouse cursor emulation with analog stick, the speed 
+sensitivity can be accelerated at certain threshold.
+
+* Support 4-way and 8-way assignment for POV control
+
+* Auto repeat functionality, ranging from very slow repeat (1 time per 
+15 minutes) up to 60 times per second (with 2x processing mode)
+
+* Support for toggle button
+  e.g. use it for drag&drop with mouse emulation, or for truly automated 
+repeat of keys even when you are away from PC.
+
+* Window size became re-sizable
+
+* Open / Close main window by left-clicking task tray icon 
+  (right-click to open popup menu)
+
+* JoyToKey can be started even when joystick is not connected
+  And it will automatically detect the newly connected joystick.
+  (NOTE: it only works the first joystick.  If you connect the second one
+   or more, please press "detect" button manually from preferences panel)
+
+* Several additions in the menu such as
+  - copy configuration file
+  - open game controller setting from control panel
+  - suspend / resume temporalily
+  - 2x processing mode (if you want to minimize the input latency, sacrificing extra CPU load)
+  - generate debug log
+
+
+Ver3.x highlights
+* Under Windows 2000 or later (including XP), JoyToKey now supports
+  some applications using DirectInput.
+
+* Choosing L-Shift, R-Shift, L-Ctrl, ... from the list, you can make
+  a distinction between left and right keys.
+  (Be careful to select L-Shift or R-Shift or (normal) Shift!
+   You have to choose the correct one for the application!)
+
+* Support for POV switches.
+
+* Support for "Switch to the other configuration file" function.
+
+* The configuration file can be easily selected and switched to
+  at task tray menu, without opening and activating JoyToKey window.
+
+* The firstly activated configuration file can now be specified
+  by command line option at start up time.
+
+* Analog stick can be configured in detail by modifying JoyToKey.ini
+  file directly:
+
+  "AnalogDeadZone"  (ranges 0 to 10000: default 1000)
+    The center area where subtle input from analog stick is ignored.
+
+  "AnalogSaturation"  (ranges 0 to 10000: default 10000)
+    The surrounding area from which additional inputs are saturated.

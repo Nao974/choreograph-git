@@ -1,0 +1,19 @@
+{
+  "category": "VARIUS",
+  "name": "PIPI",
+  "description": "\n",
+  "motors": {
+    "fl_shoulder": "90",
+    "fl_arm": "140",
+    "fl_wrist": "50",
+    "fr_shoulder": "90",
+    "fr_arm": "140",
+    "fr_wrist": "50",
+    "bl_shoulder": "80",
+    "bl_arm": "160",
+    "bl_wrist": "90",
+    "br_shoulder": "150",
+    "br_arm": "178",
+    "br_wrist": "5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "detail":
+	{
+	"description": "Spotmicro - robot dog",
+	"filepath": "../_projects/spotmicro/",
+	"view": "view.jpg",
+	"skeleton": "spotmicro.skt",
+	"position": "positions",
+	"movement": "movements",
+	"controller": "./controllers/controller_ps3.ctl"
+	}
+}

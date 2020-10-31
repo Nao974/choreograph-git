@@ -1,0 +1,267 @@
+{
+  "controller": 
+    {
+    "Nano_head":
+      {
+	  "type": "arduino_nano",
+	  "connection": "serial",
+      "address": ["COM9",115200],
+      "port": "pin",
+      "sync_read": true,
+      "attached_motorgroups": ["head"]
+      },
+    "M-CARD_left_arm":
+      {
+	  "type": "pi_3",
+	  "connection": "lan",
+      "address": ["192.168.1.10",3000],
+      "port": "i2c",
+      "sync_read": true,
+      "attached_motorgroups": ["shoulder_l","elbow_l"]
+      },
+    "M-CARD_right_arm":
+      {
+	  "type": "pi_3",
+	  "connection": "lan",
+      "adress": "192.168.1.11:3000",
+      "port": "i2c",
+      "sync_read": true,
+      "attached_motorgroups": ["shoulder_r","elbow_r"]
+      },
+    "M-CARD_right_leg":
+      {
+	  "type": "pi_3",
+	  "connection": "lan",
+      "adress": "192.168.1.12:3000",
+      "port": "i2c",
+      "sync_read": true,
+      "attached_motorgroups": ["hip_r","knee_r", "ankle_r"]
+      },
+    "M-CARD_left_leg":
+      {
+	  "type": "pi_3",
+	  "connection": "lan",
+      "adress": "192.168.1.13:3000",
+      "port": "i2c",
+      "sync_read": true,
+      "attached_motorgroups": ["hip_l","knee_l", "ankle_l"]
+      }
+     },
+  "motorgroups":
+    {
+	"head": ["head_x","head_y"],
+    "shoulder_l": ["l_shoulder_y", "l_shoulder_x"],
+    "elbow_l": ["l_elbow_x", "l_elbow_y"],
+    "shoulder_r": ["r_shoulder_y", "r_shoulder_x"],
+    "elbow_r": ["r_elbow_x", "r_elbow_y"],
+	"hip_r": ["r_hip_y", "r_hip_x"],
+	"knee_r": ["r_knee_x"],
+	"ankle_r": ["r_ankle_x", "r_ankle_z"],
+	"hip_l": ["l_hip_y", "l_hip_x"],
+	"knee_l": ["l_knee_x"],
+	"ankle_l": ["l_ankle_x", "l_ankle_z"]
+    },
+  "motors":
+    {
+   "head_x":
+      {
+      "id": 5,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [0, 180],
+	  "default_position": 90,
+	  "skeleton_position": [3, 0, -1]
+      },
+   "head_y":
+      {
+      "id": 10,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [15, 180],
+	  "default_position": 90,
+	  "skeleton_position": [3, 1, 1]
+      },
+     "l_shoulder_y":
+      {
+      "id": 20,
+      "type": "mboxe_a",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [4, 2, -1]
+      },
+    "l_shoulder_x":
+      {
+      "id": 21,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [500, 750],
+	  "default_position": 625,
+	  "skeleton_position": [5, 2, 1]
+      },
+   "l_elbow_x":
+      {
+      "id": 22,
+      "type": "mboxe_a",
+      "orientation" : "direct",
+      "offset" : -5,
+      "angle_limit": [350, 700],
+	  "default_position": 400,
+	  "skeleton_position": [5, 3, 1]
+      },
+    "l_elbow_y":
+      {
+      "id": 23,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 350,
+	  "skeleton_position": [5, 4, 1]
+      },
+    "r_shoulder_y":
+      {
+      "id": 30,
+      "type": "mboxe_a",
+      "orientation" : "direct",
+      "offset" : 9,
+      "angle_limit": [350, 750],
+	  "default_position": 700,
+	  "skeleton_position": [2, 2, 1]
+      },
+    "r_shoulder_x":
+      {
+      "id": 31,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 500],
+	  "default_position": 425,
+	  "skeleton_position": [1, 2, -1]
+      },
+   "r_elbow_x":
+      {
+      "id": 32,
+      "type": "mboxe_a",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [350, 555],
+	  "default_position": 435,
+	  "skeleton_position": [1, 3, -1]
+      },
+    "r_elbow_y":
+      {
+      "id": 33,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 23,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [1, 4, -1]
+      },
+    "r_hip_y":
+      {
+      "id": 40,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : -45,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [2, 4, 1]
+      },
+    "r_hip_x":
+      {
+      "id": 41,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [2, 5, -1]
+      },
+    "r_knee_x":
+      {
+      "id": 42,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [2, 6, -1]
+      },
+    "r_ankle_x":
+      {
+      "id": 43,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [2, 7, -1]
+      },
+   "r_ankle_z":
+      {
+      "id": 44,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 10,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [2, 8, 1]
+      },
+    "l_hip_y":
+      {
+      "id": 50,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [4, 4, 1]
+      },
+    "l_hip_x":
+      {
+      "id": 51,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 3,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [4, 5, 1]
+      },
+    "l_knee_x":
+      {
+      "id": 52,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [4, 6, 1]
+      },
+    "l_ankle_x":
+      {
+      "id": 53,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [4, 7, 1]
+      },
+   "l_ankle_z":
+      {
+      "id": 54,
+      "type": "mboxe_b",
+      "orientation" : "indirect",
+      "offset" : 0,
+      "angle_limit": [350, 750],
+	  "default_position": 550,
+	  "skeleton_position": [4, 8, 1]
+      }	  
+  }
+}

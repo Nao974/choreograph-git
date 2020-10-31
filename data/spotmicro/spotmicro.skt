@@ -1,0 +1,145 @@
+{
+  "controller": 
+    {
+    "arduino_mega":
+      {
+	  "type": "arduino_mega",
+	  "connection": "serial",
+      "address": ["COM4",500000],
+      "port": "pin",
+      "sync_read": true,
+      "attached_motorgroups": ["fl_paw", "fr_paw", "bl_paw", "br_paw"],
+	  "mg_alignment" : "h"
+      }
+    },
+  "motorgroups":
+    {
+    "fr_paw": ["fr_shoulder", "fr_arm", "fr_wrist"],
+    "fl_paw": ["fl_shoulder", "fl_arm", "fl_wrist"],
+    "br_paw": ["br_shoulder", "br_arm", "br_wrist"],
+    "bl_paw": ["bl_shoulder", "bl_arm", "bl_wrist"]
+    },
+  "motors":
+    {
+    "fl_shoulder":
+      {
+      "id": 28,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : -2,
+      "angle_limit": [10, 150],
+	  "default_position": 90,
+	  "skeleton_position": [2, 0, -1]
+      },
+    "fl_arm":
+      {
+      "id": 26,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : -2,
+      "angle_limit": [2, 178],
+	  "default_position": 140,
+	  "skeleton_position": [2, 1, -1]
+      },
+    "fl_wrist":
+      {
+      "id": 24,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [5, 175],
+	  "default_position": 50,
+	  "skeleton_position": [2, 2, -1]
+      },
+    "fr_shoulder":
+      {
+      "id": 36,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -2,
+      "angle_limit": [10, 150],
+	  "default_position": 90,
+	  "skeleton_position": [0, 0, -1]
+      },
+    "fr_arm":
+      {
+      "id": 34,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -4,
+      "angle_limit": [2, 178],
+	  "default_position": 140,
+	  "skeleton_position": [0, 1, -1]
+      },
+    "fr_wrist":
+      {
+      "id": 32,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -11,
+      "angle_limit": [5, 175],
+	  "default_position": 50,
+	  "skeleton_position": [0, 2, -1]
+      },  
+    "bl_shoulder":
+      {
+      "id": 44,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 1,
+      "angle_limit": [10, 150],
+	  "default_position": 90,
+	  "skeleton_position": [7, 0, -1]
+      },
+    "bl_arm":
+      {
+      "id": 42,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : -10,
+      "angle_limit": [2, 178],
+	  "default_position": 160,
+	  "skeleton_position": [7, 1, -1]
+      },
+    "bl_wrist":
+      {
+      "id": 40,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : -2,
+      "angle_limit": [5, 175],
+	  "default_position": 90,
+	  "skeleton_position": [7, 2, -1]
+      },
+   "br_shoulder":
+      {
+      "id": 52,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -10,
+      "angle_limit": [10, 150],
+	  "default_position": 90,
+	  "skeleton_position": [5, 0, -1]
+      },
+    "br_arm":
+      {
+      "id": 50,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -2,
+      "angle_limit": [2, 178],
+	  "default_position": 160,
+	  "skeleton_position": [5, 1, -1]
+      },
+    "br_wrist":
+      {
+      "id": 48,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -9,
+      "angle_limit": [5, 175],
+	  "default_position": 90,
+	  "skeleton_position": [5, 2, -1]
+      }
+	}
+}

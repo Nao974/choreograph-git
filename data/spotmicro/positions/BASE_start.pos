@@ -1,0 +1,19 @@
+{
+  "category": "BASE",
+  "name": "start",
+  "description": "En bas \u00e0 l'allumage\n",
+  "motors": {
+    "fl_shoulder": "90",
+    "fl_arm": "130",
+    "fl_wrist": "5",
+    "fr_shoulder": "90",
+    "fr_arm": "130",
+    "fr_wrist": "5",
+    "bl_shoulder": "90",
+    "bl_arm": "130",
+    "bl_wrist": "5",
+    "br_shoulder": "90",
+    "br_arm": "130",
+    "br_wrist": "5"
+  }
+}

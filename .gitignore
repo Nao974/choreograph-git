@@ -1,0 +1,6 @@
+*.pyc
+*.DS_Store
+*.dat
+*.caffemodel
+*.log
+choreogrpah/.venv/

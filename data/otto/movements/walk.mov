@@ -1,0 +1,32 @@
+{
+  "name": "walk",
+  "duration": 1000,
+  "functions": {
+    "I013": {
+      "function": "Linear",
+      "position": "default_init",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I014": {
+      "function": "Linear",
+      "position": "walk_1",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I015": {
+      "function": "Linear",
+      "position": "walk_2",
+      "duration": 1000,
+      "nb_step": 1
+    },
+    "I016": {
+      "function": "Linear",
+      "position": "walk_3",
+      "duration": 1000,
+      "nb_step": 1
+    }
+  },
+  "id": "I003",
+  "file": "Not saved"
+}

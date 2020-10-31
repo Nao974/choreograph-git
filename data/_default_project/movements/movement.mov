@@ -1,0 +1,20 @@
+{
+  "name": "shake_leg",
+  "duration": 500,
+  "functions": {
+    "I001": {
+      "function": "Linear",
+      "position": "shakeleg_1",
+      "duration": 500,
+      "nb_step": 0
+    },
+    "I002": {
+      "function": "Linear",
+      "position": "shakeleg_2",
+      "duration": 500,
+      "nb_step": 0
+    }
+  },
+  "id": "I001",
+  "file": "C:/Choregrpah_TK/PROJECTS/default_project/movements/shake_leg.mov"
+}

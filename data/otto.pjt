@@ -1,0 +1,12 @@
+{
+ "detail":
+	{
+	"description": "blablabl",
+	"filepath": "../_projects/otto/",
+	"view": "view.jpg",
+	"skeleton": "otto.skt",
+	"position": "positions",
+	"movement": "movements",
+	"controller": "./controllers/controller_ps3.ctl"
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "category": "default",
+  "name": "init",
+  "description": "\n",
+  "motors": {
+    "YL": "90",
+    "YR": "90",
+    "RL": "90",
+    "RR": "90"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "category": "base",
+  "name": "maxi",
+  "description": "au plus loin\n",
+  "motors": {
+    "one": "178",
+    "two": "178"
+  }
+}

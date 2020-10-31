@@ -1,0 +1,49 @@
+{
+  "name": "flapping",
+  "duration": 10000,
+  "functions": {
+    "I001": {
+      "function": "Oscillator",
+      "position": "default_init",
+      "duration": 10000,
+      "nb_step": 10,
+      "data": {
+        "cycle": 10,
+        "T": 1000,
+        "Nb": 4,
+        "pin": {
+          "0": 5,
+          "1": 10,
+          "2": 6,
+          "3": 11
+        },
+        "A": {
+          "0": 12,
+          "1": 12,
+          "2": 20,
+          "3": 20
+        },
+        "O": {
+          "0": 0,
+          "1": 0,
+          "2": 10,
+          "3": -10
+        },
+        "Ph": {
+          "0": 0,
+          "1": 180,
+          "2": -90,
+          "3": 90
+        }
+      }
+    },
+    "I003": {
+      "function": "Linear",
+      "position": "default_init",
+      "duration": 2000,
+      "nb_step": 2
+    }
+  },
+  "id": "I006",
+  "file": ""
+}

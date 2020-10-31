@@ -1,0 +1,26 @@
+{
+  "name": "jump",
+  "duration": 250,
+  "functions": {
+    "I001": {
+      "function": "Direct",
+      "position": "default_init",
+      "duration": "250",
+      "nb_step": "1"
+    },
+    "I002": {
+      "function": "Linear",
+      "position": "jump_up",
+      "duration": 3000,
+      "nb_step": 12
+    },
+    "I004": {
+      "function": "Linear",
+      "position": "jump_down",
+      "duration": 3000,
+      "nb_step": 12
+    }
+  },
+  "id": "I004",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/!!! DIRP !!!/_SOURCE/Choregrpah_TK/PROJECTS/otto/movements/jump.mov"
+}

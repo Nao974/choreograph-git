@@ -1,0 +1,43 @@
+{
+  "name": "test",
+  "duration": 250,
+  "functions": {
+    "I001": {
+      "function": "Oscillator",
+      "position": "default_init",
+      "duration": 250,
+      "nb_step": 1,
+      "data": {
+        "cycle": 1,
+        "T": 250,
+        "Nb": 4,
+        "pin": {
+          "0": 5,
+          "1": 10,
+          "2": 6,
+          "3": 11
+        },
+        "A": {
+          "0": 15,
+          "1": 16,
+          "2": 17,
+          "3": 18
+        },
+        "O": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "Ph": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        }
+      }
+    }
+  },
+  "id": "I00D",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/!!! DIRP !!!/_SOURCE/Choregrpah_TK/PROJECTS/otto/movements/test.mov"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Swing",
+  "duration": 250,
+  "functions": {
+    "I001": {
+      "function": "Linear",
+      "position": "default_init",
+      "duration": 500,
+      "nb_step": 2
+    },
+    "I002": {
+      "function": "Oscillator",
+      "position": "default_init",
+      "duration": 1000,
+      "nb_step": 4,
+      "data": {
+        "cycle": 5,
+        "T": 1000,
+        "Nb": 2,
+        "pin": {
+          "2": 6,
+          "3": 11
+        },
+        "A": {
+          "2": 35,
+          "3": 35
+        },
+        "O": {
+          "2": 35,
+          "3": -35
+        },
+        "Ph": {
+          "2": 0,
+          "3": 0
+        }
+      }
+    },
+    "I003": {
+      "function": "Linear",
+      "position": "default_init",
+      "duration": 500,
+      "nb_step": 2
+    }
+  },
+  "id": "I008",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/!!! DIRP !!!/_SOURCE/Choregrpah_TK/PROJECTS/otto/movements/Swing.mov"
+}

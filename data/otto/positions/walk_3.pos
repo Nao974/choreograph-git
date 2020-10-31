@@ -1,0 +1,11 @@
+{
+  "category": "walk",
+  "name": "3",
+  "description": "\n",
+  "motors": {
+    "YL": "135",
+    "YR": "61",
+    "RL": "90",
+   "RR": "90"
+  }
+}

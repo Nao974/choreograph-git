@@ -1,0 +1,63 @@
+{
+  "controller": 
+    {
+    "arduino":
+      {
+	  "type": "arduino_nano",
+	  "connection": "serial",
+      "address": ["COM5",500000],
+      "port": "pin",
+      "sync_read": true,
+      "attached_motorgroups": ["left_leg", "right_leg"],
+	  "mg_alignment" : "v"
+      }
+    },
+  "motorgroups":
+    {
+    "left_leg": ["YL", "RL"],
+    "right_leg": ["YR", "RR"]
+    },
+  "motors":
+    {
+	"YL":
+      {
+      "id": 5,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 19,
+      "angle_limit": [0, 180],
+	  "default_position": 90,
+	  "skeleton_position": [2, 1, 1]
+      },
+    "YR":
+      {
+      "id": 10,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -15,
+      "angle_limit": [0, 180],
+	  "default_position": 90,
+	  "skeleton_position": [0, 1, -1]
+      },
+    "RL":
+      {
+      "id": 6,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : -18,
+      "angle_limit": [0, 180],
+	  "default_position": 90,
+	  "skeleton_position": [2, 2, 1]
+      },
+    "RR":
+      {
+      "id": 11,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : 5,
+      "angle_limit": [0, 180],
+	  "default_position": 90,
+	  "skeleton_position": [0, 2, -1]
+      }
+	}
+}

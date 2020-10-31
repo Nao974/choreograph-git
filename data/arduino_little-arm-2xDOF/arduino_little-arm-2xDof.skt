@@ -1,0 +1,42 @@
+{
+  "controller": 
+    {
+    "arduino_left_arm":
+      {
+	  "type": "arduino_uno",
+	  "connection": "serial",
+      "address": ["COM3",500000],
+      "port": "pin",
+      "sync_read": true,
+      "attached_motorgroups": ["arm"],
+	  "mg_alignment" : "v"
+      }
+    },
+  "motorgroups":
+    {
+    "arm": ["one", "two"]
+    },
+  "motors":
+    {
+    "one":
+      {
+      "id": 5,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : -4,
+      "angle_limit": [0, 180],
+	  "default_position": 90,
+	  "skeleton_position": [0, 1, -1]
+      },
+    "two":
+      {
+      "id": 10,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [15, 180],
+	  "default_position": 90,
+	  "skeleton_position": [1, 0, 1]
+      }
+  }
+}

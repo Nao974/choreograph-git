@@ -1,0 +1,19 @@
+{
+  "category": "BASE",
+  "name": "get-up-from-sitting",
+  "description": "\n\n\n",
+  "motors": {
+    "fl_shoulder": "90",
+    "fl_arm": "120",
+    "fl_wrist": "5",
+    "fr_shoulder": "90",
+    "fr_arm": "120",
+    "fr_wrist": "5",
+    "bl_shoulder": "90",
+    "bl_arm": "160",
+    "bl_wrist": "8",
+    "br_shoulder": "90",
+    "br_arm": "160",
+    "br_wrist": "8"
+  }
+}

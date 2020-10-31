@@ -1,0 +1,50 @@
+{
+  "name": "shake_leg",
+  "duration": 500,
+  "functions": {
+    "I001": {
+      "function": "Linear",
+      "position": "shakeleg_1",
+      "duration": 500,
+      "nb_step": 0
+    },
+    "I002": {
+      "function": "Linear",
+      "position": "shakeleg_2",
+      "duration": 500,
+      "nb_step": 0
+    },
+    "I003": {
+      "function": "Linear",
+      "position": "shakeleg_3",
+      "duration": 500,
+      "nb_step": 1
+    },
+    "I004": {
+      "function": "Linear",
+      "position": "shakeleg_2",
+      "duration": 500,
+      "nb_step": 1
+    },
+    "I005": {
+      "function": "Linear",
+      "position": "shakeleg_3",
+      "duration": 500,
+      "nb_step": 1
+    },
+    "I006": {
+      "function": "Linear",
+      "position": "shakeleg_2",
+      "duration": 500,
+      "nb_step": 1
+    },
+    "I007": {
+      "function": "Linear",
+      "position": "default_init",
+      "duration": 500,
+      "nb_step": 1
+    }
+  },
+  "id": "I007",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/!!! DIRP !!!/_SOURCE/Choregrpah_TK/PROJECTS/otto/movements/shake_leg.mov"
+}

@@ -1,0 +1,10 @@
+{
+  "category": "base",
+  "name": "mini",
+  "description": "completement replie",
+  "description": "completement replie",
+  "motors": {
+    "one": "2",
+    "two": "20"
+  }
+}

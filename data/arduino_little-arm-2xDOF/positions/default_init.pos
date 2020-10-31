@@ -1,0 +1,9 @@
+{
+  "category": "default",
+  "name": "init",
+  "description": "Position a l'initialisation des servos\n",
+  "motors": {
+    "one": "90",
+    "two": "90"
+  }
+}

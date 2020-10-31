@@ -1,0 +1,62 @@
+{
+  "controller": 
+    {
+    "arduino_left_arm":
+      {
+	  "type": "arduino_uno",
+	  "connection": "serial",
+      "address": ["COM3",115200],
+      "port": "pin",
+      "sync_read": true,
+      "attached_motorgroups": ["shoulder","elbow"]
+      }
+    },
+  "motorgroups":
+    {
+    "shoulder": ["l_shoulder_y", "l_shoulder_x"],
+    "elbow": ["l_elbow_z", "l_elbow_y"]
+    },
+  "motors":
+    {
+    "l_shoulder_y":
+      {
+      "id": 20,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [0, 120],
+	  "default_position": 60,
+	  "skeleton_position": [5, 2, -1]
+      },
+    "l_shoulder_x":
+      {
+      "id": 21,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : 10,
+      "angle_limit": [50, 105],
+	  "default_position": 50,
+	  "skeleton_position": [6, 2, 1]
+      },
+   "l_elbow_z":
+      {
+      "id": 22,
+      "type": "servo_pwm",
+      "orientation" : "direct",
+      "offset" : 0,
+      "angle_limit": [0, 105],
+	  "default_position": 53,
+	  "skeleton_position": [6, 3, 1]
+      },
+    "l_elbow_y":
+      {
+      "id": 23,
+      "type": "servo_pwm",
+      "orientation" : "indirect",
+      "offset" : -10,
+      "angle_limit": [0, 148],
+	  "default_position": 74,
+	  "skeleton_position": [6, 4, 1]
+      }
+  }
+}

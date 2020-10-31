@@ -1,0 +1,9 @@
+{
+  "category": "base",
+  "name": "droit",
+  "description": "tout droit comme un I\n",
+  "motors": {
+    "one": "90",
+    "two": "178"
+  }
+}

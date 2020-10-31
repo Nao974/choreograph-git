@@ -1,0 +1,14 @@
+{
+  "name": "maxi",
+  "duration": 250,
+  "functions": {
+    "I001": {
+      "function": "Linear",
+      "position": "base_maxi",
+      "duration": 250,
+      "nb_step": 1
+    }
+  },
+  "id": "I002",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/! Choregrpah_TK !/_projects/arduino_little-arm-2xDOF/movements/maxi.mov"
+}

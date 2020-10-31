@@ -1,0 +1,11 @@
+{
+  "category": "jump",
+  "name": "up",
+  "description": "\n",
+  "motors": {
+    "YL": "90",
+    "YR": "90",
+    "RL": "150",
+    "RR": "150"
+  }
+}
