@@ -6,7 +6,7 @@ Environement logiciel permettant le paramétrage de robots à base de servo-mote
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvez décrire pour chaque controleur, chaque servo moteur formant chaque groupe (membre).  
 Cela permettra de générer le squelette:  
-<div align="center"><img alt="skeleton.json" width="20%" src="docs/skeleton/img_skeleton_json.png" />&emsp;&emsp;&emsp;<img alt="skeleton Scrennshoot" src="docs/skeleton/img_skeleton_screen.png" /></div>
+<div align="center"><img alt="skeleton.json" width="40%" src="docs/skeleton/img_skeleton_json.png" />&emsp;<img alt="skeleton Scrennshoot" width="40%" src="docs/skeleton/img_skeleton_screen.png" />&emsp;<img alt="skeleton Scrennshoot" width="40%" src="docs/skeleton/img_skeleton_inter.png" /></div>
 
 [Décrire son Robot](https://github.com/Nao974/M-BOXE_MANAGER_TK/blob/master/README.md)  
 
