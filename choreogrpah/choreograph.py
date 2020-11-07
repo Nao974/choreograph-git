@@ -12,7 +12,7 @@ Usage:
 
 __authors__ = "François BOLDODUCK"
 __contact__ = "nao-tumu@hotmail.fr"
-__version__ = "1.0.0"
+__version__ = "0.9.0"
 __copyright__ = "copyleft"
 __date__ = "2020/08"
 
@@ -21,7 +21,7 @@ import common.constants as g
 import platform
 
 g.system = platform.uname()
-version = '1.0_2020-08'
+version = '0.9_2020-08'
 lang = lang_FR
 bye = 'N'
 

@@ -64,8 +64,9 @@ class Frame_Skeleton(Canvas):
                 if 'mg_alignment' not in controller:
                     controller['mg_alignment'] = 'v'
                 g.controllers_memory[name]['state']= ''
+
                 if g.connect_controller.get() == 1:
-                     if controller['connection'] == 'serial':
+                    if controller['connection'] == 'serial':
                         if g.serial_port != '':
                             g.serial_port.close()
                         try:

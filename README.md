@@ -1,16 +1,19 @@
-README.md
-	Une description de votre projet et de ses objectifs
+# Choreogrpah (beta) v0.9
+Environement logiciel permettant le param√©trage de robots √† base de servo-moteur.  
+[English Version](https://github.com/Nao974/M-BOXE_MANAGER_TK/blob/master/README.md)  
 
-LICENSE.md
-	La Licence de votre projet (consulter le opensource.org) (https://choosealicense.com/)
+## Choreograph permet:
+- Une **Description structur√©e** de vos robots  
+Sur la base d'un fichier JSON, vous allez pouvez d√©crire pour chaque controleur, chaque servo moteur formant chaque groupe (membre).  
+Cela permettra de g√©n√©rer le squelette:  
+<div align="center"><img alt="skeleton.json" src="docs/skeleton/img_skeleton_json.png" />&emsp;&emsp;&emsp;<img alt="skeleton Scrennshoot" src="docs/skeleton/img_skeleton_screen.png" /></div>
 
-.gitignore
-	Indique ‡ Git quels fichiers et rÈpertoire ignorer
-	
+[D√©crire son Robot](https://github.com/Nao974/M-BOXE_MANAGER_TK/blob/master/README.md)  
 
-Les modules (nommÈs par des nom de fichier) doivent avoir des noms courts tout en minuscules. Les traits de soulignement peuvent Ítre utilisÈs dans le om du module s'il amÈliore la lisibilitÈ.
-
-Les paquets (nommÈs par des nom de repertoire)  doivent Ègalement avoir des noms cours tout en minuscule, mais sans tirÈ.
-
-Tout fichier python (.py) est un module et un groupe de module dans un repertoire est un paquet.
-Dans chaque repertoire de paquet, un fichier __init__.py doit etre prÈsent (meme vide)
+- D√©termination de la **position initiale** de chaque servo (trim)  
+- Pilotage en **temps r√©el** de chaque servo-moteur  
+- Prise en charge de **plusieurs types** de servo-moteurs (pwm, serie, autres)
+- **cr√©ation de mouvement** par enchainement de positions pr√©alablement enregistr√©es
+- **G√©n√©ration automatique** de scripts pour Arduino
+- **Pilotage du robot** par le clavier ou manette Bluetooth
+- **Multi langues**
