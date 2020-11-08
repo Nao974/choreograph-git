@@ -5,12 +5,12 @@ Environement logiciel permettant le paramétrage de robots à base de servo-mote
 ## Choreograph permet:
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, chaque servo moteur et les regrouper pour former des membres.
-<div align="center"><img alt="skeleton.json" width="40%" src="docs/skeleton/img_skeleton_json.png" />&nbsp<img alt="skeleton.json" width="40%" src="docs/skeleton/img_skeleton_screen.png" /></div>
+<div align="center"><img alt="skeleton.json" width="40%" src="docs/skeleton/img_skeleton_json.png" />&nbsp;<img alt="skeleton.screen" width="20%" src="docs/skeleton/img_skeleton_screen.png" /></div>
 [Décrire son Robot](https://github.com/Nao974/choreograph-git/blob/Update-Docs/docs/skeleton/file_format_skeleton_fr.md)  
 
 - Détermination de la **position neutre (trim)** de chaque servo  
 Une fois le fichier de squelette chargé, vous pourrez rechercher la position initiale de chaque servo-moteur, et mettre à jour votre fichier JSON.  
-<div align="center"><img alt="skeleton.json" width="40%" src="docs/skeleton/img_recalculate_trim.png" /></div>
+<div align="center"><img alt="recalculate.trim" width="40%" src="docs/skeleton/trim/img_recalculate_trim.png" /></div>
 [Recalcule Trim](https://github.com/Nao974/choreograph-git/blob/Update-Docs/docs/trim/trim_fr.md)  
 
 - Pilotage en **temps réel** et création de **SnapShoot** de position  
