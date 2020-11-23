@@ -8,7 +8,7 @@ Environement logiciel permettant le paramétrage de robots à base de servo-mote
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, chaque servo moteur et les regrouper pour former chaque membre de votre robot.
 
-<div align="center"><img alt="skeleton.json" width="40%" src="docs/skeleton/img_skeleton_json.png" />&nbsp;<img alt="skeleton.screen" width="20%" src="docs/skeleton/img_skeleton_screen.png" /></div> 
+<div align="center"><img alt="skeleton.json" width="40%" src="docs/skeleton/img_skeleton_json.png" />&nbsp;<img alt="skeleton.screen" width="20%" src="docs/skeleton/img_skeleton_screen.png" /></div>  
 
 [Détail sur le format du fichier](docs/skeleton/file_format_skeleton_fr.md)  
 
