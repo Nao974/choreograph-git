@@ -10,7 +10,7 @@ Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, ch
 
 <div align="center"><img alt="skeleton.json" width="40%" src="docs/skeleton/img_skeleton_json.png" />&nbsp;<img alt="skeleton.screen" width="20%" src="docs/skeleton/img_skeleton_screen.png" /></div>  
 
-[Détail sur le format du fichier](docs/skeleton/file_format_skeleton_fr.md)  
+[=> Détail sur le format du fichier](docs/skeleton/file_format_skeleton_fr.md)  
 
 ---
 
@@ -19,16 +19,17 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="recalculate.trim" width="60%" src="docs/trim/img_recalculate_trim.png" /></div>  
 
-[Recalcule Trim](https://github.com/Nao974/choreograph-git/blob/master/docs/skeleton/file_format_skeleton_fr.md)  
+[=> en savoir +](docs/skeleton/file_format_skeleton_fr.md)  
 
 ---
 
-- Pilotage en **temps réel** et création de **SnapShoot** de position  
-blabalald  
+- Piloter en **temps réel** chaque servo moteur indépendament et enregistrer des **SnapShoot** de position.  
 
-<div align="center"><img alt="skeleton.json" width="60%" src="docs/skeleton/img_recalculate_trim.png" /></div>  
+<div align="center"><img alt="position.screen" width="40%" src="docs/position/img_position_screen.png" />&nbsp;<img alt="position.screen" width="20%" src="docs/position/img_position_screen2.png" /></div>  
 
-[Recalcule Trim](https://github.com/Nao974/choreograph-git/blob/Update-Docs/docs/trim/trim_fr.md)  
+[=> en savoir +](docs/position/file_format_position_fr.md)  
+
+---
 
 - **création de mouvement** par enchainement de positions préalablement enregistrées  
 blablabal  
