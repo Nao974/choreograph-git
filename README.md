@@ -1,4 +1,4 @@
-# Choreogrpah (beta) v0.9
+# Choreograph (beta) v0.9
 
 [English Version](./README.md)  
 
@@ -11,7 +11,7 @@ Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, ch
 
 <div align="center"><img alt="skeleton.json" width="50%" src="docs/skeleton/img_skeleton_json.png" />&nbsp;<img alt="skeleton.screen" width="40%" src="docs/skeleton/img_skeleton_screen.png" /></div>  
 
-[=> Détail sur le format du fichier](docs/skeleton/desc_skeleton.md)  
+[=> en savoir +](docs/skeleton/desc_skeleton_fr.md)  
 
 ---
 
@@ -20,7 +20,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="recalculate.trim" width="100%" src="docs/trim/img_recalculate_trim.png" /></div>  
 
-[=> en savoir +](docs/skeleton/desc_trim.md)  
+[=> en savoir +](docs/skeleton/desc_trim_fr.md)  
 
 ---
 
@@ -28,7 +28,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="position.screen" width="60%" src="docs/position/img_position_screen.png" />&nbsp;<img alt="position.screen" width="30%" src="docs/position/img_position_screen2.png" /></div>  
 
-[=> en savoir +](docs/position/desc_position.md)  
+[=> en savoir +](docs/position/desc_position_fr.md)  
 
 ---
 
@@ -36,7 +36,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="movement.screen" width="90%" src="docs/movement/img_movement.png" /></div>  
 
-[=> en savoir +](docs/position/desc_movement.md)  
+[=> en savoir +](docs/position/desc_movement_fr.md)  
 
 ---
 
@@ -44,7 +44,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="skeleton.json" width="49%" src="docs/skeleton/img_skeleton_json.png" />&nbsp;<img alt="export_c.screen" width="49%" src="docs/export_c/img_export_c.png" /></div>  
 
-[=> en savoir +](docs/export_c/desc_export_c.md)  
+[=> en savoir +](docs/export_c/desc_export_c_fr.md)  
 
 ---
 
@@ -52,7 +52,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="multi_type.screen" width="100%" src="docs/multi_type/img_multi_type.png" /></div>  
 
-[=> en savoir +](docs/multi_type/desc_multi_type.md)  
+[=> en savoir +](docs/multi_type/desc_multi_type_fr.md)  
 
 ---
 
@@ -60,12 +60,20 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="controller.screen" width="100%" src="docs/controller/img_controller.png" /></div>  
 
-[=> en savoir +](docs/controller/desc_controller.md)  
+[=> en savoir +](docs/controller/desc_controller_fr.md)  
 
 ---
 
-- **Multi langues** actuellement disponibles: Anglais et Français. Stockées sous forme de dictionnaire facilement modifiable.
+- **Multi langues**, disponibles: Anglais et Français, stockées sous forme de dictionnaire facilement modifiable.
 
 <div align="center"><img alt="lang.screen" width="50%" src="docs/lang/img_lang.png" /></div>  
 
-[=> en savoir +](docs/lang/desc_lang.md)  
+[=> en savoir +](docs/lang/desc_lang_fr.md)  
+
+---
+
+- L'ensemble des formats de paramétrage sont décrits dans le lien suivant.  
+
+[=> en savoir +](docs/file_format_fr.md)  
+
+---
