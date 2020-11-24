@@ -33,7 +33,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 - **Créer des mouvements** en enchainant des positions préalablement enregistréess, grâce à des transistions paramétrables.  
 
-<div align="center"><img alt="movement.screen" width="60%" src="docs/movement/img_movement.png" /></div>  
+<div align="center"><img alt="movement.screen" width="90%" src="docs/movement/img_movement.png" /></div>  
 
 [=> en savoir +](docs/position/desc_movement.md)  
 
