@@ -1,9 +1,8 @@
-
-#include "choregraph.h"
+#include "choreograph.h"
 
 void choregraph::init_serial()
   {
-   char c;
+   int8_t c;
    Serial.begin(500000);
    Serial.flush();
    c = 0;
@@ -14,27 +13,27 @@ void choregraph::init_serial()
    Serial.write(c);
   }
 /////////////////////////////////
-char choregraph::serial_getChar()
+int8_t choregraph::serial_getChar()
   {
-   char value;
+   int8_t value;
    while (Serial.available()<1);
    value = Serial.read();
    return(value);
   }
 
-byte choregraph::serial_getByte()
+uint8_t choregraph::serial_getByte()
   {
-   byte value;
+   uint8_t value;
    while (Serial.available()<1);
    value = Serial.read();
    return(value);
   }
   
-int choregraph::serial_getInt()
+int16_t choregraph::serial_getInt()
   {
-   byte c1, c2; int value;
+   uint8_t c1, c2; int16_t value;
    while (Serial.available()<2);
-   c1 = Serial.read(); // int on 2 bytes
+   c1 = Serial.read(); // int16_t on 2 bytes
    c2 = Serial.read();
    value = (c2<<8) | c1;
    return(value);
@@ -42,7 +41,7 @@ int choregraph::serial_getInt()
 
 /////////////////////////////////
 
-byte choregraph::return_position(byte servo_id)
+uint8_t choregraph::return_position(uint8_t servo_id)
   {
    return(servo_position[servo_id]);
   }
@@ -50,14 +49,14 @@ byte choregraph::return_position(byte servo_id)
 
 void choregraph::servoInit_serial()
   {
-   byte pin;
+   uint8_t pin;
    pin = serial_getByte();
    servoInit(pin);
   }
 
-void choregraph::servoInit(byte pin)
+void choregraph::servoInit(uint8_t pin)
   {
-   byte servo_id;
+   uint8_t servo_id;
    servo_id = nbre_servo++;
    pin_to_servo[pin]= servo_id;
    servo[servo_id].attach(pin);
@@ -66,30 +65,29 @@ void choregraph::servoInit(byte pin)
 
 void choregraph::servoOffset_serial()
   {
-   byte servo_id;
-   char offset;
+   uint8_t servo_id;
+   int8_t offset;
    servo_id = pin_to_servo[serial_getByte()];
    offset = serial_getByte();
    offset = offset -90;
    servoOffset(servo_id, offset);
   }
 
-void choregraph::servoOffset(byte servo_id, char offset)
+void choregraph::servoOffset(uint8_t servo_id, int8_t offset)
   {
-   
     servo[servo_id].SetTrim(offset);
   }  
 
 void choregraph::moveSingle_serial() 
   {
-   byte servo_id;
-   byte pos;
+   uint8_t servo_id;
+   uint8_t pos;
    servo_id = pin_to_servo[serial_getByte()];
    pos = serial_getByte();
    moveSingle(servo_id, pos); 
   }
 
-void choregraph::moveSingle(byte servo_id, byte pos) 
+void choregraph::moveSingle(uint8_t servo_id, uint8_t pos) 
   {
    servo[servo_id].SetPosition(pos);
    servo_position[servo_id]= pos;
@@ -97,15 +95,15 @@ void choregraph::moveSingle(byte servo_id, byte pos)
 
 void choregraph::moveTime_serial() 
   {
-   byte servo_id;
-   int pos, time;
+   uint8_t servo_id;
+   int16_t pos, time;
    servo_id = pin_to_servo[serial_getByte()];
    time = serial_getInt() * 10;
    pos = serial_getInt();
    moveTime(servo_id, pos, time); 
   }
 
-void choregraph::moveTime(byte servo_id, int pos, int time) 
+void choregraph::moveTime(uint8_t servo_id, int16_t pos, int16_t time) 
   {
    unsigned long partial_time, final_time;
    float increment;
@@ -114,7 +112,7 @@ void choregraph::moveTime(byte servo_id, int pos, int time)
     {
      increment = (pos - servo_position[servo_id]) / (time / 10.0);
      final_time =  millis() + time;
-     for (int iteration = 1; millis() < final_time; iteration++) 
+     for (int16_t iteration = 1; millis() < final_time; iteration++) 
       {
        partial_time = millis() + 10;
        servo[servo_id].SetPosition(servo_position[servo_id] + (iteration * increment));
@@ -127,13 +125,13 @@ void choregraph::moveTime(byte servo_id, int pos, int time)
 
 void choregraph::moveServos_serial() 
   {
-   byte nbre;
-   int time;
+   uint8_t nbre;
+   int16_t time;
    time = serial_getInt() * 10;
    nbre = serial_getByte();
 
-   byte servo_array[nbre], pos[nbre];   
-   for (int i=0; i<nbre; i++)
+   uint8_t servo_array[nbre], pos[nbre];   
+   for (int16_t i=0; i<nbre; i++)
      {
       servo_array[i] = pin_to_servo[serial_getByte()];
       pos[i] = serial_getByte();
@@ -141,35 +139,35 @@ void choregraph::moveServos_serial()
 	moveServos(time, nbre, servo_array, pos);
    }
 
-void choregraph::moveServos(int time, byte nbre, byte servo_array[], byte pos[]) 
+void choregraph::moveServos(int16_t time, uint8_t nbre, uint8_t servo_array[], uint8_t pos[]) 
   {
    unsigned long partial_time, final_time;
    float increment[nbre];
    if(time>10)
      {
-      for (int i=0; i< nbre; i++) increment[i] = (pos[i] - servo_position[servo_array[i]]) / (time / 10.0);
+      for (int16_t i=0; i< nbre; i++) increment[i] = (pos[i] - servo_position[servo_array[i]]) / (time / 10.0);
       final_time =  millis() + time;
-      for (int iteration = 1; millis() < final_time; iteration++) 
+      for (int16_t iteration = 1; millis() < final_time; iteration++) 
         {
          partial_time = millis() + 10;
-         for (int i=0; i< nbre; i++) servo[servo_array[i]].SetPosition(servo_position[servo_array[i]] + (iteration * increment[i]));
+         for (int16_t i=0; i< nbre; i++) servo[servo_array[i]].SetPosition(servo_position[servo_array[i]] + (iteration * increment[i]));
          while (millis() < partial_time); //pause
         }
     }
-   else for (int i=0; i< nbre; i++) servo[servo_array[i]].SetPosition(pos[i]);
+   else for (int16_t i=0; i< nbre; i++) servo[servo_array[i]].SetPosition(pos[i]);
    
-   for (int i=0; i< nbre; i++)  servo_position[servo_array[i]] = pos[i];
+   for (int16_t i=0; i< nbre; i++)  servo_position[servo_array[i]] = pos[i];
   }
 
 void choregraph::oscillateServos_serial()
   {
-   int T; byte cycle, nbre;
+   int16_t T; uint8_t cycle, nbre;
    cycle = serial_getByte();
    T = serial_getInt() * 10;
    nbre = serial_getByte();
-   byte servo_array[nbre];
-   int A[nbre], O[nbre]; double phase_diff[nbre];
-   for (int i=0; i<nbre; i++)
+   uint8_t servo_array[nbre];
+   int16_t A[nbre], O[nbre]; int32_t phase_diff[nbre];
+   for (int16_t i=0; i<nbre; i++)
      {
       servo_array[i] = pin_to_servo[serial_getByte()];
       A[i] = serial_getByte() - 90;
@@ -179,9 +177,9 @@ void choregraph::oscillateServos_serial()
    oscillateServos(cycle, T, nbre, servo_array, A, O, phase_diff);
   }
 
-void choregraph::oscillateServos(byte cycle, int T, byte nbre, byte servo_array[], int A[], int O[], double phase_diff[])
+void choregraph::oscillateServos(uint8_t cycle, int16_t T, uint8_t nbre, uint8_t servo_array[], int16_t A[], int16_t O[], int32_t phase_diff[])
   {  
-   for (int i=0; i<nbre; i++) 
+   for (int16_t i=0; i<nbre; i++) 
      {
       servo[servo_array[i]].SetO(O[i]);
       servo[servo_array[i]].SetA(A[i]);
@@ -189,8 +187,8 @@ void choregraph::oscillateServos(byte cycle, int T, byte nbre, byte servo_array[
       servo[servo_array[i]].SetPh(phase_diff[i]);
      }
       
-   double ref=millis();
-   for (double x=ref; x<=T*cycle+ref; x=millis())
-     for (int i=0; i<nbre; i++)
+   int32_t ref=millis();
+   for (int32_t x=ref; x<=T*cycle+ref; x=millis())
+     for (int16_t i=0; i<nbre; i++)
         servo[servo_array[i]].refresh();
 }

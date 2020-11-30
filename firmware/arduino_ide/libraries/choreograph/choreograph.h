@@ -4,7 +4,7 @@
 #include <Servo.h>
 #include <Oscillator.h>
 
-#define  NB_SERVO_MAX  12
+#define  NB_SERVO_MAX        12
 
 #define SERVO_INITSINGLE     10
 #define SERVO_INITOFFSET     11
@@ -18,13 +18,13 @@ class choregraph
 {
  public:
   // standard functions
-  byte return_position(byte servo_id);
-  void servoInit(byte pin);
-  void servoOffset(byte servo_id, char offset);
-  void moveSingle(byte servo_id, byte pos);
-  void moveTime(byte servo_id, int pos, int time);
-  void moveServos(int time, byte nbre, byte servo_array[], byte pos[]);
-  void oscillateServos(byte cycle, int T, byte nbre, byte servo_array[], int A[], int O[], double phase_diff[]);
+  uint8_t return_position(uint8_t servo_id);
+  void servoInit(uint8_t pin);
+  void servoOffset(uint8_t servo_id, int8_t offset);
+  void moveSingle(uint8_t servo_id, uint8_t pos);
+  void moveTime(uint8_t servo_id, int16_t pos, int16_t time);
+  void moveServos(int16_t time, uint8_t nbre, uint8_t servo_array[], uint8_t pos[]);
+  void oscillateServos(uint8_t cycle, int16_t T, uint8_t nbre, uint8_t servo_array[], int16_t A[], int16_t O[], int32_t phase_diff[]);
   
 
   // calling standard functions from the serial link
@@ -37,13 +37,13 @@ class choregraph
 
   // basic function for exchange via serial link  
   void init_serial();
-  char serial_getChar();
-  byte serial_getByte();
-  int serial_getInt();
+  int8_t serial_getChar();
+  uint8_t serial_getByte();
+  int16_t serial_getInt();
 
  private:
   Oscillator servo[NB_SERVO_MAX];
-  byte pin_to_servo[64];
-  byte servo_position[64];
-  byte nbre_servo=0;
+  uint8_t pin_to_servo[64];
+  uint8_t servo_position[64];
+  uint8_t nbre_servo=0;
 };

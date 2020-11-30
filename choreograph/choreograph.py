@@ -13,15 +13,14 @@ Usage:
 __authors__ = "François BOLDODUCK"
 __contact__ = "nao-tumu@hotmail.fr"
 __version__ = "0.9.0"
-__copyright__ = "copyleft"
-__date__ = "2020/08"
+__date__ = "2020/11"
 
 from interface.interface import *
 import common.constants as g
 import platform
 
 g.system = platform.uname()
-version = '0.9_2020-08'
+version = __version__ +' '+ __date__
 lang = lang_FR
 bye = 'N'
 

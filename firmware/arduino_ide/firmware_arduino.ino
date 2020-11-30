@@ -1,8 +1,8 @@
-#include<Servo.h>
+#include <Servo.h>
 #include <Oscillator.h>
-#include<choregraph.h>
+#include <choreograph.h>
 
-choregraph chore;
+choreograph chore;
 
 void setup() 
 {

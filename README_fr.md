@@ -1,26 +1,26 @@
 # Choreograph (beta) v0.9
 
-[English Version](./README.md)  
+[English Version](../README.md)  
 
 Environement logiciel permettant le paramétrage de robots à base de servo-moteur.  
 
 ## Choreograph vous permet
 
 - Une **Description structurée** de vos robots  
-Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, chaque servo moteur et les regrouper pour former chaque membre de votre robot.
+Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, chaque servo moteur et les regrouper pour former les membres de votre robot.
 
 <div align="center"><img alt="skeleton.json" width="50%" src="docs/skeleton/img_skeleton_json.png" />&nbsp;<img alt="skeleton.screen" width="40%" src="docs/skeleton/img_skeleton_screen.png" /></div>  
 
-[=> en savoir +](docs/skeleton/desc_skeleton_fr.md)  
+[=> en savoir +](docs/skeleton/file_format_skeleton_fr.md)  
 
 ---
 
 - Déterminer la **position neutre (trim)** de chaque servo.  
-Une fois le fichier de squelette chargé, vous pourrez rechercher la position initiale de chaque servo-moteur de manière interactive et mettre à jour votre fichier JSON.  
+Une fois le fichier de squelette chargé, vous pourrez rechercher la position initiale de chaque servo-moteur de manière interactive et mettre à jour le fichier de description du squelette.  
 
 <div align="center"><img alt="recalculate.trim" width="100%" src="docs/trim/img_recalculate_trim.png" /></div>  
 
-[=> en savoir +](docs/skeleton/desc_trim_fr.md)  
+[=> en savoir +](docs/trim/desc_trim_fr.md)  
 
 ---
 
@@ -56,7 +56,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 ---
 
-- **Piloter votre robot** en attachant des mouvements paramétrés aux touches du clavier ou de votre manette bluetooth.
+- **Piloter votre robot** en attachant les mouvements paramétrés aux touches du clavier ou de votre manette bluetooth.
 
 <div align="center"><img alt="controller.screen" width="100%" src="docs/controller/img_controller.png" /></div>  
 
@@ -64,7 +64,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 ---
 
-- **Multi langues**, disponibles: Anglais et Français, stockées sous forme de dictionnaire facilement modifiable.
+- **Multi langues**, disponible en Anglais et Français, les langues sont stockées sous forme de dictionnaire facilement modifiable.
 
 <div align="center"><img alt="lang.screen" width="50%" src="docs/lang/img_lang.png" /></div>  
 

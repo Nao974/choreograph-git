@@ -144,5 +144,6 @@ lang_EN['Interface -> Robot'] = 'Position -> Robot'
 lang_EN['Interface <- Robot'] = 'Interface <- Robot'
 lang_EN['SnapShot Position'] = 'SnapShot Position'
 lang_EN['Settings'] = 'Settings'
+lang_EN['Export to'] = 'Export to '
 
 lang_EN[""] = ''

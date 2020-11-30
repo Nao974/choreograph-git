@@ -1,4 +1,5 @@
 # fichier: Squelette  
+
 Ce fichier permet de décrire l'ensemble du paramétrage du robot.  
 Les moteurs sont définis puis intégrés à des "motorgroups", eux meme rattachés à un controleur.  
 Un robot peut comporter plusieurs controleurs.
@@ -72,6 +73,7 @@ Extension: **.skt**
 	}
 
 ## "controller"
+
 Permet de paramétrer la ou les carte(s) controleurs des servo-moteurs.  
 Cette section peut comporter plusieurs objet correspondant à différentes cartes controleurs de servo-moteurs.  
 
@@ -80,15 +82,16 @@ arduino, arduino_uno, arduino_nano, arduino_mega, pi, pi_b, pi_3, pi_4
 * **connection**: type de connexion à la carte:  
 serial, lan, onboard
 * **address**: liste avec les informations necessaire à la connexion
-	* **serial**: [port_com, baudrate]
-	* **lan**: [@_ip, port_ip]
-	* **onboard**: [nop]
+  * **serial**: [port_com, baudrate]
+  * **lan**: [@_ip, port_ip]
+  * **onboard**: [nop]
 * **sync_read**: non implémenté
 * **attached_motorgroups**: Liste des "motorgroup" attachés à ce controleur
 * **mg_alignment**: alignement des moteurs par "motorgroup" dans l'onglet "Squelette":  
 "h" pour horizontal, "v" pour vertical
 
 ## "motorgroups"
+
 Un "motorgroup" est un regroupement logique de servo-moteurs correspondant par exmple à une articulation ou un membre.  
 Cette section permet de lister les "motorgroups" et définir pour chacun les servo-moteurs qui le compose.  
 
@@ -96,6 +99,7 @@ Cette section permet de lister les "motorgroups" et définir pour chacun les ser
 * **"nom_du_motorgroup2"**: ["servo3", "servo24]
 
 ## motors
+
 Permet de définir l'ensemble des moteurs du robot. Ceci seront dispatchés dans des "motorgroups".
 
 * **id**: GPIO sur la carte controleur
@@ -107,5 +111,6 @@ direct, indirect
 * **angle_limit**: limite en position min et max du moteur à ne pas dépasser: [pos_min, pos_max]
 * **default_position**: position au démarrage
 * **skeleton_position**: permet de définir dans l'onglet interatif, la position du moteur:  
-[colonne, ligne, alignement] à noter que le N° de colonne et de ligne commence à 0
+[colonne, ligne, alignement] à noter que le N° de colonne et de ligne commence à 0  
 
+[<= Retour](../../README_fr.md)  

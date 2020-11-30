@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.ttk import *
 import common.constants as g
 
 class win_tools(Toplevel):
@@ -16,6 +17,7 @@ class win_tools(Toplevel):
 
         g.write_realtime = IntVar()
         g.write_realtime.set(1)  # 1 pour cochée // 0 décochée
+        g.export_to = StringVar()
 
         self.state['write_robot'] = 0
         Button(self.lf_write_robot, text=self.lang['Show / Hide'], command= lambda x='write_robot': self.show_hide(x)).pack(anchor="w")
@@ -34,13 +36,18 @@ class win_tools(Toplevel):
         self.cv_interactive_to = Canvas(self.lf_interactive_to)
         Button(self.cv_interactive_to, text=self.lang['SnapShot Position'], command=interface.tab_interactive.snapshot).pack(pady=2, anchor="w")
 
-        self.state['setting'] = 0
+        self.state['setting'] = 1
         Button(self.lf_setting, text=self.lang['Show / Hide'], command= lambda x='setting': self.show_hide(x)).pack(anchor="w")
         self.cv_setting = Canvas(self.lf_setting)
         Checkbutton(self.cv_setting, text=self.lang["Connect Controller"], variable=g.connect_controller, command=self.check_controller).pack(anchor="w")
         Checkbutton(self.cv_setting, text=self.lang["Check Motor"], variable=g.check_motor, command=self.check_motor).pack(anchor="w")
         Checkbutton(self.cv_setting, text=self.lang["Update Engine at Loading"], variable=g.update_engine, command=self.check_engine).pack(anchor="w")
         Checkbutton(self.cv_setting, text=self.lang['catch exceptions'], variable=g.catch_exception).pack(anchor="w")
+        
+        Label(self.cv_setting, text = self.lang['Export to']).pack(side = LEFT)
+        self.export_to=Combobox(self.cv_setting, values=("IDE Arduino", "VSCode PlatformIO"), state='disabled', textvariable=g.export_to)
+        self.export_to.pack(side = LEFT)
+        self.export_to.current(0)
 
         self.lf_write_robot.pack(anchor="nw", expand=True, fill=X)
         self.lf_read_robot.pack(anchor="nw", expand=True, fill=X)
