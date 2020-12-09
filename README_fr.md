@@ -2,7 +2,11 @@
 
 [English Version](../README.md)  
 
-Environement logiciel permettant le paramétrage de robots à base de servo-moteur.  
+[Démarrage Rapide](#Démarrage-Rapide)  
+
+---
+
+Environnement logiciel permettant le paramétrage de robots à base de servo-moteur.  
 
 ## Choreograph vous permet
 
@@ -16,7 +20,7 @@ Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, ch
 ---
 
 - Déterminer la **position neutre (trim)** de chaque servo.  
-Une fois le fichier de squelette chargé, vous pourrez rechercher la position initiale de chaque servo-moteur de manière interactive et mettre à jour le fichier de description du squelette.  
+Une fois le fichier de squelette chargé, vous pourrez rechercher la position initiale de chaque servo-moteur et recalculer leur offset.  
 
 <div align="center"><img alt="recalculate.trim" width="100%" src="docs/trim/img_recalculate_trim.png" /></div>  
 
@@ -75,5 +79,9 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 - L'ensemble des formats de paramétrage sont décrits dans le lien suivant.  
 
 [=> en savoir +](docs/file_format_fr.md)  
+
+---
+
+## Démarrage Rapide
 
 ---

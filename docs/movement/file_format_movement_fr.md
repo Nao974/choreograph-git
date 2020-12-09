@@ -38,3 +38,7 @@ ATTENTION, la poistion doit être chargée et disponible dans la liste des posit
 * **id**: id du mouvement dans la liste des mouvements
 * **file**: chemin/nom_du_fichier.mov
 
+---
+
+[<= Retour](../../README_fr.md)  
+[=> Tous les formats de fichiers](../file_format_fr.md)  

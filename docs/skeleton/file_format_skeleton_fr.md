@@ -1,76 +1,77 @@
 # fichier: Squelette  
 
 Ce fichier permet de décrire l'ensemble du paramétrage du robot.  
-Les moteurs sont définis puis intégrés à des "motorgroups", eux meme rattachés à un controleur.  
+Les servo moteurs sont définis puis intégrés à des "motorgroups", eux même rattachés à un controleur.  
 Un robot peut comporter plusieurs controleurs.
 
 format: **json**  
 Extension: **.skt**  
 
-
-	{
-	  "controller": 
-		{
-		"Name_of_controller 1":
-		  {
-		  "type": "arduino_nano",
-		  "connection": "serial",
-		  "address": ["COM5",500000],
-		  "port": "pin",
-		  "sync_read": true,
-		  "attached_motorgroups": ["left_leg", "right_leg"]
-		  "mg_alignment" : "h"
-		  }
-		},
-	  "motorgroups":
-		{
-		"left_leg": ["YL", "RL"],
-		"right_leg": ["YR", "RR"]
-		},
-	  "motors":
-		{
-		"YL":
-		  {
-		  "id": 5,
-		  "type": "servo_pwm",
-		  "orientation" : "direct",
-		  "offset" : 19,
-		  "angle_limit": [0, 180],
-		  "default_position": 90,
-		  "skeleton_position": [2, 1, 1]
-		  },
-		"YR":
-		  {
-		  "id": 10,
-		  "type": "servo_pwm",
-		  "orientation" : "indirect",
-		  "offset" : -15,
-		  "angle_limit": [0, 180],
-		  "default_position": 90,
-		  "skeleton_position": [0, 1, -1]
-		  },
-		"RL":
-		  {
-		  "id": 6,
-		  "type": "servo_pwm",
-		  "orientation" : "direct",
-		  "offset" : -18,
-		  "angle_limit": [0, 180],
-		  "default_position": 90,
-		  "skeleton_position": [2, 2, 1]
-		  },
-		"RR":
-		  {
-		  "id": 11,
-		  "type": "servo_pwm",
-		  "orientation" : "indirect",
-		  "offset" : 5,
-		  "angle_limit": [0, 180],
-		  "default_position": 90,
-		  "skeleton_position": [0, 2, -1]
-		  }
-		}
-	}
+```json
+{
+ "controller":
+   {
+    "Name_of_controller 1":
+        {
+         "type": "arduino_nano",
+         "connection": "serial",
+         "address": ["COM5",500000],
+         "port": "pin",
+         "sync_read": true,
+         "attached_motorgroups": ["left_leg", "right_leg"]
+         "mg_alignment" : "h"
+        }
+    },
+ "motorgroups":
+    {
+     "left_leg": ["YL", "RL"],
+     "right_leg": ["YR", "RR"]
+    },
+ "motors":
+    {
+     "YL":
+        {
+         "id": 5,
+         "type": "servo_pwm",
+         "orientation" : "direct",
+         "offset" : 19,
+         "angle_limit": [0, 180],
+         "default_position": 90,
+         "skeleton_position": [2, 1, 1]
+        },
+     "YR":
+        {
+         "id": 10,
+         "type": "servo_pwm",
+         "orientation" : "indirect",
+         "offset" : -15,
+         "angle_limit": [0, 180],
+         "default_position": 90,
+         "skeleton_position": [0, 1, -1]
+        },
+     "RL":
+        {
+         "id": 6,
+         "type": "servo_pwm",
+         "orientation" : "direct",
+         "offset" : -18,
+         "angle_limit": [0, 180],
+         "default_position": 90,
+         "skeleton_position": [2, 2, 1]
+        },
+     "RR":
+        {
+         "id": 11,
+         "type": "servo_pwm",
+         "orientation" : "indirect",
+         "offset" : 5,
+         "angle_limit": [0, 180],
+         "default_position": 90,
+         "skeleton_position": [0, 2, -1]
+        }
+    }
+}
+```
 
 ## "controller"
 
@@ -100,7 +101,7 @@ Cette section permet de lister les "motorgroups" et définir pour chacun les ser
 
 ## motors
 
-Permet de définir l'ensemble des moteurs du robot. Ceci seront dispatchés dans des "motorgroups".
+Permet de définir l'ensemble des servo-moteurs du robot. Ceci seront dispatchés dans les "motorgroups".
 
 * **id**: GPIO sur la carte controleur
 * **type**: type du moteur entre:  
@@ -111,6 +112,9 @@ direct, indirect
 * **angle_limit**: limite en position min et max du moteur à ne pas dépasser: [pos_min, pos_max]
 * **default_position**: position au démarrage
 * **skeleton_position**: permet de définir dans l'onglet interatif, la position du moteur:  
-[colonne, ligne, alignement] à noter que le N° de colonne et de ligne commence à 0  
+[colonne, ligne, alignement] à noter que les N° de colonne et de ligne commencent à 0  
+
+---
 
 [<= Retour](../../README_fr.md)  
+[=> Tous les formats de fichiers](../file_format_fr.md)  
