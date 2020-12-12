@@ -28,7 +28,7 @@ Par défaut, l'ensemble des servo-moteurs sont pris en compte, vous pouvez déco
 
 En cliquant sur enregistrer, cela placera votre nouvelle posture dans la banque et vous proposera de l'enregistrer sur votre disque.
 
-<div align="center"><img alt="SnapShoot.win" width="35%" src="./img_doc11_snapshoot_win.png" />&nbsp;<img alt="positions.Bank" width="60%" src="./img_doc12_positions_bank.png" /></div> 
+<div align="center"><img alt="SnapShoot.win" width="35%" src="./img_doc11_snapshoot_win.png" />&nbsp;<img alt="positions.Bank" width="60%" src="./img_doc12_positions_bank.png" /></div>
 
 ---
 
@@ -52,6 +52,7 @@ Elle permet de lister et catégoriser les postures enregistrées.
 ---
 
 ## Format du fichier position.json
+
 [=> file_format_position_fr](./file_format_position_fr.md)
 
 ---

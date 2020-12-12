@@ -28,7 +28,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 ---
 
-- Commander en **temps réel** chaque servo moteur indépendament et enregistrer des "**SnapShoot**" de position.  
+- Commander en **temps réel** chaque servo moteur indépendament et enregistrer des **SnapShoot** de position.  
 
 <div align="center"><img alt="position.screen" width="60%" src="docs/position/img_position_screen.png" />&nbsp;<img alt="position.screen" width="30%" src="docs/position/img_position_screen2.png" /></div>  
 
@@ -40,7 +40,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 
 <div align="center"><img alt="movement.screen" width="90%" src="docs/movement/img_movement.png" /></div>  
 
-[=> en savoir +](docs/position/desc_movement_fr.md)  
+[=> en savoir +](docs/movement/desc_movement_fr.md)  
 
 ---
 

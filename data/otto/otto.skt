@@ -5,7 +5,7 @@
       {
 	  "type": "arduino_nano",
 	  "connection": "serial",
-      "address": ["COM6",500000],
+      "address": ["COM5",500000],
       "port": "pin",
       "sync_read": true,
       "attached_motorgroups": ["left_leg", "right_leg"],
