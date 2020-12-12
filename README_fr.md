@@ -2,13 +2,15 @@
 
 [English Version](../README.md)  
 
-[Démarrage Rapide](#Démarrage-Rapide)  
+[Démarrage Rapide](#démarrage-rapide)  
 
 ---
 
 Environnement logiciel permettant le paramétrage de robots à base de servo-moteur.  
 
 ## Choreograph vous permet
+
+[](#description_strcuturee)
 
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, chaque servo moteur et les regrouper pour former les membres de votre robot.
