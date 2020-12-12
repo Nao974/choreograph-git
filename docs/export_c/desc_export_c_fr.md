@@ -14,9 +14,11 @@ Dans votre code, afin d'initialiser votre robot, vous pouvez traduire le fichier
 
 <div align="center"><img alt="skeleton.json" width="49%" src="../skeleton/img_skeleton_json.png" />&nbsp;<img alt="export_c.screen" width="49%" src="./img_export_c.png" /></div>
 
+---
+
 ## Export des mouvements
 
-[Voir le chapitre suivant](../movement/desc_movement_fr.md#actions-sur-les-mouvements)
+[=> Chapitre Mouvement](../movement/desc_movement_fr.md#actions-sur-les-mouvements)
 
 ---
 

@@ -116,5 +116,8 @@ direct, indirect
 
 ---
 
-[<= Retour](../../README_fr.md)  
 [=> Tous les formats de fichiers](../file_format_fr.md)  
+
+---
+
+[<= Retour](../../README_fr.md#description_strcuturee)  
