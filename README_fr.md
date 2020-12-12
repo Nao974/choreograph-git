@@ -10,8 +10,6 @@ Environnement logiciel permettant le paramétrage de robots à base de servo-mot
 
 ## Choreograph vous permet
 
-[](#description_strcuturee)
-
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, chaque servo moteur et les regrouper pour former les membres de votre robot.
 
@@ -29,8 +27,6 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/trim/desc_trim_fr.md)  
 
 ---
-
-[](#position)
 
 - Commander en **temps réel** chaque servo moteur indépendament et enregistrer des **SnapShoot** de position.  
 
