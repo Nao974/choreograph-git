@@ -22,4 +22,4 @@ Dans votre code, afin d'initialiser votre robot, vous pouvez traduire le fichier
 
 ---
 
-[<= Retour](../../README_fr.md#choreograph-vous-permet)
+[<= Retour](../../README_fr.md#export-c)

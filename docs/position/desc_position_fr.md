@@ -57,4 +57,4 @@ Elle permet de lister et catégoriser les postures enregistrées.
 
 ---
 
-[<= Retour](../../README_fr.md#choreograph-vous-permet)
+[<= Retour](../../README_fr.md#position)

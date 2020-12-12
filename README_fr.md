@@ -10,6 +10,8 @@ Environnement logiciel permettant le paramétrage de robots à base de servo-mot
 
 ## Choreograph vous permet
 
+<a id="format-skeleton"></a>
+
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, chaque servo moteur et les regrouper pour former les membres de votre robot.
 
@@ -18,6 +20,7 @@ Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque controleur, ch
 [=> en savoir +](docs/skeleton/file_format_skeleton_fr.md)  
 
 ---
+<a id="desc-trim"></a>
 
 - Déterminer la **position neutre (trim)** de chaque servo.  
 Une fois le fichier de squelette chargé, vous pourrez rechercher la position initiale de chaque servo-moteur et recalculer leur offset.  
@@ -27,6 +30,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/trim/desc_trim_fr.md)  
 
 ---
+<a id="position"></a>
 
 - Commander en **temps réel** chaque servo moteur indépendament et enregistrer des **SnapShoot** de position.  
 
@@ -35,6 +39,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/position/desc_position_fr.md)  
 
 ---
+<a id="movement"></a>
 
 - **Créer des mouvements** en enchainant des positions préalablement enregistréess, grâce à des transistions paramétrables.  
 
@@ -43,6 +48,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/movement/desc_movement_fr.md)  
 
 ---
+<a id="export-c"></a>
 
 - **Exporter en langage C** la description du squelette et des mouvements pour une intégration directe dans vos codes sources.
 
@@ -51,6 +57,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/export_c/desc_export_c_fr.md)  
 
 ---
+<a id="multi-type"></a>
 
 - Prise en charge de **plusieurs types** de controleurs (Arduino Uno, Nano, Mega, Raspberry) et de servo-moteurs (pwm, serie). Il suffit de les déclarer dans la description du squelette.
 
@@ -59,6 +66,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/multi_type/desc_multi_type_fr.md)  
 
 ---
+<a id="controller"></a>
 
 - **Piloter votre robot** en attachant les mouvements paramétrés aux touches du clavier ou de votre manette bluetooth.
 
@@ -67,6 +75,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/controller/desc_controller_fr.md)  
 
 ---
+<a id="multi-lang"></a>
 
 - **Multi langues**, disponible en Anglais et Français, les langues sont stockées sous forme de dictionnaire facilement modifiable.
 
@@ -75,6 +84,7 @@ Une fois le fichier de squelette chargé, vous pourrez rechercher la position in
 [=> en savoir +](docs/lang/desc_lang_fr.md)  
 
 ---
+<a id="file-format"></a>
 
 - L'ensemble des formats de paramétrage sont décrits dans le lien suivant.  
 

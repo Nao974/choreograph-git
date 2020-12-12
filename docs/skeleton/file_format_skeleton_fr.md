@@ -120,4 +120,4 @@ direct, indirect
 
 ---
 
-[<= Retour](../../README_fr.md#choreograph-vous-permet)  
+[<= Retour](../../README_fr.md#format-skeleton)  

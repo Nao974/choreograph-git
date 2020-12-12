@@ -61,4 +61,4 @@ ATTENTION, le mouvement doit être chargé dans la liste de l'onglet "Mouvement"
 ---
 
 [<= Retour](../../README_fr.md)  
-[=> Tous les formats de fichiers](../file_format_fr.md)  
+[=> Tous les formats de fichiers](../file_format_fr.md#controller)
