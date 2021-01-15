@@ -56,7 +56,7 @@ Paramètres:
 - O: Offset en degré
 - Phase Diff: Décalage de phase
 
-<img alt="oscillator.win" width="60%" src="./img_doc2_oscillator.png" />
+<img alt="oscillator.win" width="50%" src="./img_doc2_oscillator.png" />
 
 ---
 
@@ -64,7 +64,7 @@ Paramètres:
 
 Sélectionner votre mouvement dans la banque, les détails des positions et fonction de transformation s'affiche en dessous avec les boutons suivants:
 
-<img alt="manage_movement.win" width="60%" src="./img_doc3_manage_movement.png" />
+<img alt="manage_movement.win" width="50%" src="./img_doc3_manage_movement.png" />
 
 - Delete Line: supprime la ligne de position sélectionnée
 - Play One: Joue uniquement la position sélectionée
@@ -85,7 +85,7 @@ Sélectionner votre mouvement dans la banque:
 - Remove: Supprime le mouvement de la banque, mais pas le fichier
 - Delete file: Supprime le fichier et le mouvement dans la banque
 
-<img alt="manage_bank" width="60%" src="./img_doc5_manage_bank.png" />
+<img alt="manage_bank" width="50%" src="./img_doc5_manage_bank.png" />
 
 ---
 

@@ -26,7 +26,7 @@ Extension: **.pjt**
 - **skeleton**: fichier de description du squelette au format json
 - **position**: sous dossier à partir du dossier du projet *filepath* contenant les positions au format json
 - **movement**: sous dossier à partir du dossier du projet *filepath* contenant les mouvements au format json
-- **controller**: chemin+fichier de description du controleur au format json
+- **controller**: chemin + fichier de description du contrôleur au format json
 
 ---
 

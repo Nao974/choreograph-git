@@ -18,7 +18,7 @@ Extension: **.skt**
          "address": ["COM5",500000],
          "port": "pin",
          "sync_read": true,
-         "attached_motorgroups": ["left_leg", "right_leg"]
+         "attached_motorgroups": ["left_leg", "right_leg"],
          "mg_alignment" : "h"
         }
     },

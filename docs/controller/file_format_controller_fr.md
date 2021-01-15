@@ -1,6 +1,6 @@
 # fichier: Controller
 
-Ce fichier permet d'attacher vos mouvements aux touches de votre manette bluetooch ou de votre clavier.
+Ce fichier permet d'attacher vos mouvements aux touches de votre manette Bluetooth ou de votre clavier.
 
 * Attacher vos mouvements aux boutons de la manette
 * Lier les touches de votre clavier aux boutons de la manette
@@ -51,12 +51,12 @@ Extension: **.ctl**
 }
 ```
 
-* **model**: modèle du controleur
-* **picture**: image du controleur au format jpeg
+* **model**: modèle du contrôleur
+* **picture**: image du contrôleur au format jpeg
 * **adress**: non implémenté
 * **port**: non implémenté
 * **sync_read**: non implémenté
-* **movements**: liste des boutons du controleur avec le mouvement associé:
+* **movements**: liste des boutons du contrôleur avec le mouvement associé:
   * "bouton": "mouvement"  
 * **keys**: liste des boutons du controleur avec la touche clavier associée:  
   * "bouton": "touche_clavier"

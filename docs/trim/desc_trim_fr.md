@@ -12,12 +12,12 @@ Vous allez pour cela pouvoir incrémenter ou décrémenter la position neutre de
     - "offset" : 0
     - "default_position": 90  
 
-    <img alt="json_init.trim" width="75%" src="./img_doc1_pos_init.png" />  
+    <img alt="json_init.trim" width="50%" src="./img_doc1_pos_init.png" />  
 
 4. Charger le firmware dans votre carte contrôleur [=> firmware](../firmware/desc_firmware_fr.md)
 
 5. Pour chaque servo-moteurs, affiner la position avec les flèches haut/bas de chaque servo-moteur
-    <img alt="change_position.trim" width="75%" src="./img_doc2_pos_revised.png" />
+    <img alt="change_position.trim" width="50%" src="./img_doc2_pos_revised.png" />
 
 6. Lancer le recalcule du décalage  
 
@@ -38,7 +38,7 @@ Vous allez pour cela pouvoir incrémenter ou décrémenter la position neutre de
 
 8. Recharger votre fichier de squelette par le menu Squelette-> MAJ
 
-    <img alt="updated.trim" width="75%" src="./img_doc5_updated.png" />
+    <img alt="updated.trim" width="50%" src="./img_doc5_updated.png" />
 
 ---
 [<= Retour](../../README_fr.md#desc-trim)

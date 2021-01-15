@@ -28,7 +28,7 @@ Par défaut, l'ensemble des servo-moteurs sont pris en compte, vous pouvez déco
 
 En cliquant sur enregistrer, cela placera votre nouvelle posture dans la banque et vous proposera de l'enregistrer sur votre disque.
 
-<div align="center"><img alt="SnapShoot.win" width="35%" src="./img_doc11_snapshoot_win.png" />&nbsp;<img alt="positions.Bank" width="60%" src="./img_doc12_positions_bank.png" /></div>
+<div align="center"><img alt="SnapShoot.win" width="30%" src="./img_doc11_snapshoot_win.png" />&nbsp;<img alt="positions.Bank" width="50%" src="./img_doc12_positions_bank.png" /></div>
 
 ---
 
@@ -37,7 +37,7 @@ En cliquant sur enregistrer, cela placera votre nouvelle posture dans la banque 
 Elle est chargée à partir du dossier contenant les fichiers **.pos**, soit lors de l'ouverture du projet, soit après avoir ouvert séparément le fichier squelette puis par le menu *Mouvement-> Charger Position(s)*.  
 *La création d'un fichier de description de votre projet est fortement recommandée ([format .pjt](../projet/file_format_project_fr.md) )*.  
 
-<img alt="positions.Bank" width="80%" src="./img_doc20_positions_bank.png" />
+<img alt="positions.Bank" width="50%" src="./img_doc20_positions_bank.png" />
 
 Elle permet de lister et catégoriser les postures enregistrées.
 
