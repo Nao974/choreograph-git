@@ -1,6 +1,6 @@
 # Les Mouvements
 
-Un mouvement est un enchainement de postion par des fonctions prédéfinies.
+Un mouvement est un enchainement de position par des fonctions prédéfinies.
 
 ## Création d'un mouvement
 
@@ -10,15 +10,15 @@ Un mouvement est un enchainement de postion par des fonctions prédéfinies.
 
     - La base de temps par défaut
 
-2. Selectionner la position à inserer par simple clique dans la banque des postions
+2. Sélectionner la position à insérer par simple clique dans la banque des postions
 
 3. Choisir la fonction de transformation
 
 4. paramétrer la fonction suivant votre besoin, puis cliquer sur **insérer**
 
-5. refaire ces opérations pour inserer une nouvelle position
+5. refaire ces opérations pour insérer une nouvelle position
 
-6. Cliquer sur **Enregister sous**  pour sauvegarder votre mouvement
+6. Cliquer sur **Enregistrer sous**  pour sauvegarder votre mouvement
 
     - Il faut cliquer sur **enregistrer sous** afin de l'enregistrer dans la banque de mouvement, vous pouvez annuler l'enregistrement du fichier si vous le souhaitez.
 
@@ -38,7 +38,7 @@ Paramètre:
 
 ### Linear(x)
 
-Déplacement vers la position en x ms. Calcule du *pas* de chaque servo-moteur afin que l'ensemble des servo-moteurs arrivent au meme moment.
+Déplacement vers la position en x ms. Calcule du *pas* de chaque servo-moteur afin que l'ensemble des servo-moteurs arrivent au même moment.
 
 Paramètre:
 
@@ -62,13 +62,13 @@ Paramètres:
 
 ## Actions sur les mouvements
 
-Selectionner votre mouvement dans la banque, les détails des positions et fonction de transformation s'affiche en dessous avec les boutons suivants:
+Sélectionner votre mouvement dans la banque, les détails des positions et fonction de transformation s'affiche en dessous avec les boutons suivants:
 
 <img alt="manage_movement.win" width="60%" src="./img_doc3_manage_movement.png" />
 
-- Delete Line: supprime la ligne de position selectionnée
-- Play One: Joue uniquement la position selectionée
-- Up: Déplace la position une ligne au dessus
+- Delete Line: supprime la ligne de position sélectionnée
+- Play One: Joue uniquement la position sélectionée
+- Up: Déplace la position une ligne au-dessus
 - Down: Déplace la position une ligne en bas
 - Play All: Joue l'ensemble du mouvement
 - Save as: Sauvegarde votre mouvement
@@ -79,7 +79,7 @@ Selectionner votre mouvement dans la banque, les détails des positions et fonct
 
 ## Gestion des mouvements
 
-Selectionner votre mouvement dans la banque:
+Sélectionner votre mouvement dans la banque:
 
 - New: Création d'un nouveau mouvement
 - Remove: Supprime le mouvement de la banque, mais pas le fichier

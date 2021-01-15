@@ -1,8 +1,8 @@
 # fichier: Squelette  
 
 Ce fichier permet de décrire l'ensemble du paramétrage du robot.  
-Les servo moteurs sont définis puis intégrés à des "motorgroups", eux même rattachés à un controleur.  
-Un robot peut comporter plusieurs controleurs.
+Les servo moteurs sont définis puis intégrés à des "motorgroups", eux même rattachés à un contrôleur.  
+Un robot peut comporter plusieurs contrôleurs.
 
 format: **json**  
 Extension: **.skt**  
@@ -75,25 +75,25 @@ Extension: **.skt**
 
 ## "controller"
 
-Permet de paramétrer la ou les carte(s) controleurs des servo-moteurs.  
-Cette section peut comporter plusieurs objet correspondant à différentes cartes controleurs de servo-moteurs.  
+Permet de paramétrer la ou les carte(s) contrôleurs des servo-moteurs.  
+Cette section peut comporter plusieurs objets correspondants à différentes cartes contrôleurs de servo-moteurs.  
 
 * **type**: type de carte entre:  
 arduino, arduino_uno, arduino_nano, arduino_mega, pi, pi_b, pi_3, pi_4
 * **connection**: type de connexion à la carte:  
 serial, lan, onboard
-* **address**: liste avec les informations necessaire à la connexion
+* **address**: liste avec les informations nécessaire à la connexion
   * **serial**: [port_com, baudrate]
   * **lan**: [@_ip, port_ip]
   * **onboard**: [nop]
 * **sync_read**: non implémenté
-* **attached_motorgroups**: Liste des "motorgroup" attachés à ce controleur
+* **attached_motorgroups**: Liste des "motorgroup" attachés à ce contrôleur
 * **mg_alignment**: alignement des moteurs par "motorgroup" dans l'onglet "Squelette":  
 "h" pour horizontal, "v" pour vertical
 
 ## "motorgroups"
 
-Un "motorgroup" est un regroupement logique de servo-moteurs correspondant par exmple à une articulation ou un membre.  
+Un "motorgroup" est un regroupement logique de servo-moteurs correspondant par exemple à une articulation ou un membre.  
 Cette section permet de lister les "motorgroups" et définir pour chacun les servo-moteurs qui le compose.  
 
 * **"nom_du_motorgroup1"**: ["servo1", "servo2"]
@@ -111,7 +111,7 @@ direct, indirect
 * **offset**: décalage au démarrage afin d'ajuster la position par défaut
 * **angle_limit**: limite en position min et max du moteur à ne pas dépasser: [pos_min, pos_max]
 * **default_position**: position au démarrage
-* **skeleton_position**: permet de définir dans l'onglet interatif, la position du moteur:  
+* **skeleton_position**: permet de définir dans l'onglet interactif, la position du moteur:  
 [colonne, ligne, alignement] à noter que les N° de colonne et de ligne commencent à 0  
 
 ---

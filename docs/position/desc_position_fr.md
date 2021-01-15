@@ -1,10 +1,10 @@
 # Commande en temps Réel et enregistrement de postures
 
-Une fois votre robot monté, votre fichier de description de squelette créé, le firmware chargé dans votre robot et les positions initiales paramétrées, on va pouvoir commencer à faire des choses interressantes :)
+Une fois votre robot monté, votre fichier de description de squelette créé, le firmware chargé dans votre robot et les positions initiales paramétrées, on va pouvoir commencer à faire des choses intéressantes :)
 
 ## Commande en temps Réel
 
-Rien de plus simple, à partir de l'onglet **Interactif** modifier la position actuelle soit en entrant une postion manuellement, soit en utilisant les flèches haut bas ==> le servo-moteur bouge en conséquence.
+Rien de plus simple, à partir de l'onglet **Interactif** modifier la position actuelle soit en entrant une position manuellement, soit en utilisant les flèches haut bas ==> le servo-moteur bouge en conséquence.
 
 <img alt="change_pos" width="50%" src="./img_doc1_change_pos.png" />
 
@@ -16,13 +16,13 @@ Si vous ne souhaitez pas que les servo-moteurs bougent à chaque changement, vou
 
 ## Enregistrement de postures
 
-Grâce à la commande en temps réel de vos servo-moteurs, votre robot est maintenant dans la position que vous recherchez, il vous suffit de cliquer sur **"SnapShoot"** de la fenêtre *"Tools"* afin d'enregistrer cette posture.  
+Grâce à la commande en temps réel de vos servo-moteurs, votre robot est maintenant dans la position que vous recherchez, il vous suffit de cliquer sur **"SnapShot"** de la fenêtre *"Tools"* afin d'enregistrer cette posture.  
 
-<img alt="SnapShhot" width="25%" src="./img_doc10_snapshoot.png" />
+<img alt="SnapShot" width="25%" src="./img_doc10_snapshoot.png" />
 
-Par défaut, l'ensemble des servo-moteurs sont pris en compte, vous pouvez décocher ceux qui ne vous interessent pas, indiquer :  
+Par défaut, l'ensemble des servo-moteurs sont pris en compte, vous pouvez décocher ceux qui ne vous intéressent pas, indiquer :  
 
-- la catégorie qui serviera de rubrique dans la banque de postion
+- la catégorie qui servira de rubrique dans la banque de position
 - le nom de la posture
 - une description de celle ci
 
@@ -34,18 +34,18 @@ En cliquant sur enregistrer, cela placera votre nouvelle posture dans la banque 
 
 ## La Banque de Positions
 
-Elle est chargée à partir du dossier contenant les fichiers **.pos**, soit lors de l'ouverture du projet, soit aprés avoir ouvert séparement le fichier squelette puis par le menu *Mouvement-> Charger Position(s)*.  
-*La création d'un fichier de description de votre projet est fortement recommandé ([format .pjt](../projet/file_format_project_fr.md) )*.  
+Elle est chargée à partir du dossier contenant les fichiers **.pos**, soit lors de l'ouverture du projet, soit après avoir ouvert séparément le fichier squelette puis par le menu *Mouvement-> Charger Position(s)*.  
+*La création d'un fichier de description de votre projet est fortement recommandée ([format .pjt](../projet/file_format_project_fr.md) )*.  
 
 <img alt="positions.Bank" width="80%" src="./img_doc20_positions_bank.png" />
 
 Elle permet de lister et catégoriser les postures enregistrées.
 
-- **->Robot** vous permet d'envoyer directement la position selectionnée à votre robot, et met à jour l'onglet interactif
+- **->Robot** vous permet d'envoyer directement la position sélectionnée à votre robot, et met à jour l'onglet interactif
 
-- **Remove** supprime la position selectionnée de la liste mais ne supprime pas le fichier  
+- **Remove** supprime la position sélectionnée de la liste mais ne supprime pas le fichier  
 
-- **Delete file** supprime la position selectionnée de la liste ainsi que le fichier
+- **Delete file** supprime la position sélectionnée de la liste ainsi que le fichier
 
 - **Interactive<-** envoie la position à l'onglet *Interactive* mais pas au robot
 

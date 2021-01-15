@@ -1,6 +1,6 @@
 # Exportation en langage C
 
-Super, j'ai créé mes mouvements, mon but est maintenant de pouvoir les inserer dans mon code.
+Super, j'ai créé mes mouvements, mon but est maintenant de pouvoir les insérer dans mon code.
 
 ## Description de mon Robot
 
@@ -8,7 +8,7 @@ Dans votre code, afin d'initialiser votre robot, vous pouvez traduire le fichier
 
 - Ouvrir votre projet ou directement le fichier squelette.json
 
-- Selectionner le format d'export souhaité dans la fenetre d'outil
+- Sélectionner le format d'export souhaité dans la fenêtre d'outil
 
 - Puis dans le menu *Squelette -> Export vers ...*
 

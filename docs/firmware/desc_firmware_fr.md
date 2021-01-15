@@ -1,10 +1,16 @@
 # Firmware
 
-blablalbal
+## Arduino
 
-## sous titre 2
+Vous trouverez dans le dossier *\firmware* les fichiers nécessaires au téléversement du croquis dans votre robot à partir de l'IDE Arduino:
 
-<div align="center"><img alt="recalculate.menu" width="29%" src="./img_doc3_menu_recalculate.png" />&nbsp;<img alt="recalculed.screen" width="70%" src="./img_doc4_win_recalculate.png" /></div>  
+- les librairies, à installer par le menu *Croquis-> Importer Bibliothèque-> Ajouter*
+
+- Le croquis à téléverser
+
+## Visual Studio Code + Platform IO
+
+### *Coming Soon*
 
 ---
-[<= Retour](../../README_fr.md)
+[<= Retour](../../README_fr.md#firmware)

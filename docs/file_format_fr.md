@@ -4,7 +4,7 @@ L'ensemble des formats de paramétrage sont décrits dans les rubriques suivante
 
 - [Projet.pjt](./projet/file_format_project_fr.md)  
 
-- [Squelette.skt](./skeleton.file_format_skeleton_fr.md)  
+- [Squelette.skt](./skeleton/file_format_skeleton_fr.md)  
 
 - [Position.pos](./position/file_format_position_fr.md)  
 
@@ -14,4 +14,4 @@ L'ensemble des formats de paramétrage sont décrits dans les rubriques suivante
 
 ---
 
-[<= Retour](../../README_fr.md)  
+[<= Retour](../../README_fr.md#file-format)  
