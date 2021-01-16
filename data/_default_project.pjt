@@ -2,7 +2,7 @@
  "detail":
 	{
 	"description": "Default project file",
-	"filepath": "./Data/_default_project/",
+	"filepath": "./data/_default_project/",
 	"view": "view.jpg",
 	"skeleton": "skeleton.skt",
 	"position": "positions",

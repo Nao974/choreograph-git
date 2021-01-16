@@ -10,12 +10,12 @@ Extension: **.pjt**
  "detail":
   {
    "description": "My project from OttO robot.",
-   "filepath": "../_projects/otto/",
+   "filepath": "./data/otto/",
    "view": "view.jpg",
    "skeleton": "otto.skt",
    "position": "positions",
    "movement": "movements",
-   "controller": "../../_controllers/controller_ps3.ctl"
+   "controller": "./_controllers/controller_ps3.ctl"
   }
 }
 ```
