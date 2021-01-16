@@ -14,4 +14,4 @@ L'ensemble des formats de paramétrage sont décrits dans les rubriques suivante
 
 ---
 
-[<= Home](../../README_fr.md)  
+[<= Home](../README_fr.md)  
