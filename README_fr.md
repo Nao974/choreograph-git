@@ -1,6 +1,6 @@
 # Choreograph (beta) v0.9
 
-[English Version](../README.md)  
+[English Version](./README.md)  
 
 [Démarrage Rapide](#démarrage-rapide)  
 
@@ -114,7 +114,7 @@ OK, vous avez monté votre robot et effectué quelques tests de bon fonctionneme
   - l'ouvrir est modifier les balises suivantes à minima
     - **description**: avec la précédemment de votre robot
     - **filepath**: modifier le chemin avec le nom du dossier precedement renommé
-    - [=> format complet du fichier projet](../projet/file_format_project_fr.md)
+    - [=> format complet du fichier projet](docs//projet/file_format_project_fr.md)
 - dans le dossier de votre projet, remplacer le fichier **view.jpg** par une image de votre robot, elle sera affichée à chaque chargement de votre projet.
 
 ---
@@ -128,19 +128,19 @@ Modifions maintenant le fichier de description de votre robot en ouvrant le fich
   - décrire chaque servo-moteur
   - vous pouvez maintenant regrouper les servo-moteurs de chaque membre dans le noeud *motorgroups*
   - et enfin attacher ces *motorgroups* au bon contrôleur
-- Tous les détails se trouvent dans la documentation [=> format complet squeleton.skt](../skeleton/file_format_skeleton_fr.md)
+- Tous les détails se trouvent dans la documentation [=> format complet squeleton.skt](docs//skeleton/file_format_skeleton_fr.md)
 
 ---
 
-Charger le firmware *Choreograph* dans votre carte [=> documentation firmware](../firmware/desc_firmware_fr.md)
+Charger le firmware *Choreograph* dans votre carte [=> documentation firmware](docs//firmware/desc_firmware_fr.md)
 
 ---
 
 - Vous pouvez maintenant enregistrer vos propres positions
-  - [=> documentation sur les positions](../position/desc_position_fr.md)
+  - [=> documentation sur les positions](docs//position/desc_position_fr.md)
 - Puis les enchainer sous forme de mouvements
-  - [=> documentation sur les mouvements](../movement/desc_movement_fr.md)
+  - [=> documentation sur les mouvements](docs//movement/desc_movement_fr.md)
 - Piloter votre robot à partir de votre clavier ou manette BT
-  - [=> documentation sur les contrôleurs](../controller/desc_controller_fr.md)
+  - [=> documentation sur les contrôleurs](docs//controller/desc_controller_fr.md)
 
 ---
