@@ -4,13 +4,15 @@
 
 [Démarrage Rapide](#démarrage-rapide)  
 
+<a id="up"></a>
+
 ---
 
 Environnement logiciel permettant le paramétrage de robots à base de servo-moteur.  
 
 ## Choreograph vous permet
 
-<a id="format-skeleton"></a>
+
 
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque contrôleur, chaque servo moteur et les regrouper pour former les membres de votre robot.
@@ -144,3 +146,5 @@ Charger le firmware *Choreograph* dans votre carte [=> documentation firmware](d
   - [=> documentation sur les contrôleurs](docs//controller/desc_controller_fr.md)
 
 ---
+
+[=> Haut](./README_fr.md#up)
