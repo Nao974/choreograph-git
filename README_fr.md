@@ -1,10 +1,10 @@
 # Choreograph (beta) v0.9
 
+<a id="up"></a>
+
 [English Version](./README.md)  
 
 [Démarrage Rapide](#démarrage-rapide)  
-
-<a id="up"></a>
 
 ---
 
@@ -12,7 +12,7 @@ Environnement logiciel permettant le paramétrage de robots à base de servo-mot
 
 ## Choreograph vous permet
 
-
+<a id="format-skeleton"></a>
 
 - Une **Description structurée** de vos robots  
 Sur la base d'un fichier JSON, vous allez pouvoir décrire chaque contrôleur, chaque servo moteur et les regrouper pour former les membres de votre robot.
