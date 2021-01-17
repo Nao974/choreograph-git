@@ -23,7 +23,7 @@ Les actionneurs actuellement supportés sont les servo-moteurs:
 - les servo-moteurs standard PWM (pour modélisme)
 
 - M-Boxe, uniquement par Raspbery Pi  
-[=> projet M-Boxe](https://github.com/Nao974/M-BOXE)
+[=> GutHub: projet M-Boxe](https://github.com/Nao974/M-BOXE)
 
 - Les servo-moteurs séries peuvent être déclarés dans le squelette.skt mais ne sont pas pour le moment pris en charge par le firmware.
 
