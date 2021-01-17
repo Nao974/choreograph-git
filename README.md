@@ -2,7 +2,7 @@
 
 <a id="up"> </a>
 
-[Version française](./README_FR.md)
+[Version française](./README_fr.md)
 
 [Quickstart](#quickstart)
 
@@ -10,9 +10,9 @@
 
 Software environment allowing the parameterization of servo-motor-based robots.
 
-## Choreograph allows you
-
 <a id="format-skeleton"> </a>
+
+## Choreograph allows you
 
 - A **Structured Description** of your robots  
 On the basis of a JSON file, you will be able to describe each controller, each servo motor and group them to form the members of your robot.
@@ -118,7 +118,7 @@ OK, you have assembled your robot and carried out some good functioning tests on
   - open it is to modify the following tags at least
     - **description**: with the previously of your robot
     - **filepath**: modify the path with the name of the previously renamed folder
-    - [=> full format of the project file](docs/project/file_format_project.md)
+    - [=> full format of the project file](docs/projet/file_format_project.md)
 - in your project folder, replace the **view.jpg** file with an image of your robot, it will be displayed each time your project is loaded.
 
 ---
