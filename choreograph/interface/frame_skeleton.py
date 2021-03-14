@@ -27,7 +27,6 @@ class Frame_Skeleton(Canvas):
             obj.destroy()
 
         frame_skeleton = Canvas(self)
-
         if not g.skeleton_memory == {}:
             Label(frame_skeleton, text="{}: {}".format(self.lang['File'], name_file)).grid(column=self.frame_column, row=self.frame_row, pady=2, padx=5, sticky=W)
             self.frame_row += 1
@@ -159,14 +158,7 @@ class Frame_Skeleton(Canvas):
 
         else:
             Label(self, text=self.lang['No file loaded, Menu Skeleton->Open File']).grid(column=0, row=0, pady=2, padx=5, sticky=W)
-
-      
-        defilY = Scrollbar(self, orient='vertical')
-        defilY.grid(column=0, row=0, sticky='ns')   
-        frame_skeleton.grid(column=1, row=0, padx=2, pady=5)
-        frame_skeleton.configure(yscrollcommand =defilY.set)
-        defilY.configure(command=frame_skeleton.yview)
-        frame_skeleton.configure(scrollregion=frame_skeleton.bbox(ALL))
+        frame_skeleton.grid(column=0, row=0, padx=2, pady=5)
 
     def win_controller(self, controller):
         wincontroller= Toplevel()

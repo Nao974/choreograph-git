@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Arduino.h>
+#include <arduino.h>
 #include <Servo.h>
 #include <Oscillator.h>
 
@@ -14,7 +14,7 @@
 #define SERVO_MOVESERVOS     30
 #define SERVO_MOVEOSCILLATE  31
 
-class choreograph
+class choregraph
 {
  public:
   // standard functions

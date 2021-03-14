@@ -29,10 +29,10 @@ class Interface:
         self.filepath_controller = ''
 
         self.windows = Tk()
-        #self.windows.geometry("450x450")
+        #  self.windows.geometry("450x450")
         self.windows.title('DIRP- Choregraph v%s' % self.version)
         # self.windows.iconbitmap(...)
-        #self.windows.resizable(0, 0)
+        # self.windows.resizable(0, 0)
 
         g.check_motor = IntVar()
         g.update_engine = IntVar()
