@@ -21,7 +21,7 @@ import platform
 
 g.system = platform.uname()
 version = __version__ +' '+ __date__
-lang = lang_FR
+lang = lang_EN
 bye = 'N'
 
 while bye != 'Q':
