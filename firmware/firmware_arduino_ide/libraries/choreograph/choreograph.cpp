@@ -1,6 +1,6 @@
 #include "choreograph.h"
 
-void choregraph::init_serial()
+void choreograph::init_serial()
   {
    int8_t c;
    Serial.begin(500000);
@@ -13,7 +13,7 @@ void choregraph::init_serial()
    Serial.write(c);
   }
 /////////////////////////////////
-int8_t choregraph::serial_getChar()
+int8_t choreograph::serial_getChar()
   {
    int8_t value;
    while (Serial.available()<1);
@@ -21,7 +21,7 @@ int8_t choregraph::serial_getChar()
    return(value);
   }
 
-uint8_t choregraph::serial_getByte()
+uint8_t choreograph::serial_getByte()
   {
    uint8_t value;
    while (Serial.available()<1);
@@ -29,7 +29,7 @@ uint8_t choregraph::serial_getByte()
    return(value);
   }
   
-int16_t choregraph::serial_getInt()
+int16_t choreograph::serial_getInt()
   {
    uint8_t c1, c2; int16_t value;
    while (Serial.available()<2);
@@ -41,20 +41,20 @@ int16_t choregraph::serial_getInt()
 
 /////////////////////////////////
 
-uint8_t choregraph::return_position(uint8_t servo_id)
+uint8_t choreograph::return_position(uint8_t servo_id)
   {
    return(servo_position[servo_id]);
   }
 
 
-void choregraph::servoInit_serial()
+void choreograph::servoInit_serial()
   {
    uint8_t pin;
    pin = serial_getByte();
    servoInit(pin);
   }
 
-void choregraph::servoInit(uint8_t pin)
+void choreograph::servoInit(uint8_t pin)
   {
    uint8_t servo_id;
    servo_id = nbre_servo++;
@@ -63,7 +63,7 @@ void choregraph::servoInit(uint8_t pin)
    servo[servo_id].SetTrim(0);
   }  
 
-void choregraph::servoOffset_serial()
+void choreograph::servoOffset_serial()
   {
    uint8_t servo_id;
    int8_t offset;
@@ -73,12 +73,12 @@ void choregraph::servoOffset_serial()
    servoOffset(servo_id, offset);
   }
 
-void choregraph::servoOffset(uint8_t servo_id, int8_t offset)
+void choreograph::servoOffset(uint8_t servo_id, int8_t offset)
   {
     servo[servo_id].SetTrim(offset);
   }  
 
-void choregraph::moveSingle_serial() 
+void choreograph::moveSingle_serial() 
   {
    uint8_t servo_id;
    uint8_t pos;
@@ -87,13 +87,13 @@ void choregraph::moveSingle_serial()
    moveSingle(servo_id, pos); 
   }
 
-void choregraph::moveSingle(uint8_t servo_id, uint8_t pos) 
+void choreograph::moveSingle(uint8_t servo_id, uint8_t pos) 
   {
    servo[servo_id].SetPosition(pos);
    servo_position[servo_id]= pos;
   }
 
-void choregraph::moveTime_serial() 
+void choreograph::moveTime_serial() 
   {
    uint8_t servo_id;
    int16_t pos, time;
@@ -103,7 +103,7 @@ void choregraph::moveTime_serial()
    moveTime(servo_id, pos, time); 
   }
 
-void choregraph::moveTime(uint8_t servo_id, int16_t pos, int16_t time) 
+void choreograph::moveTime(uint8_t servo_id, int16_t pos, int16_t time) 
   {
    unsigned long partial_time, final_time;
    float increment;
@@ -123,7 +123,7 @@ void choregraph::moveTime(uint8_t servo_id, int16_t pos, int16_t time)
    servo_position[servo_id] = pos;
   }
 
-void choregraph::moveServos_serial() 
+void choreograph::moveServos_serial() 
   {
    uint8_t nbre;
    int16_t time;
@@ -139,7 +139,7 @@ void choregraph::moveServos_serial()
 	moveServos(time, nbre, servo_array, pos);
    }
 
-void choregraph::moveServos(int16_t time, uint8_t nbre, uint8_t servo_array[], uint8_t pos[]) 
+void choreograph::moveServos(int16_t time, uint8_t nbre, uint8_t servo_array[], uint8_t pos[]) 
   {
    unsigned long partial_time, final_time;
    float increment[nbre];
@@ -159,7 +159,7 @@ void choregraph::moveServos(int16_t time, uint8_t nbre, uint8_t servo_array[], u
    for (int16_t i=0; i< nbre; i++)  servo_position[servo_array[i]] = pos[i];
   }
 
-void choregraph::oscillateServos_serial()
+void choreograph::oscillateServos_serial()
   {
    int16_t T; uint8_t cycle, nbre;
    cycle = serial_getByte();
@@ -177,7 +177,7 @@ void choregraph::oscillateServos_serial()
    oscillateServos(cycle, T, nbre, servo_array, A, O, phase_diff);
   }
 
-void choregraph::oscillateServos(uint8_t cycle, int16_t T, uint8_t nbre, uint8_t servo_array[], int16_t A[], int16_t O[], int32_t phase_diff[])
+void choreograph::oscillateServos(uint8_t cycle, int16_t T, uint8_t nbre, uint8_t servo_array[], int16_t A[], int16_t O[], int32_t phase_diff[])
   {  
    for (int16_t i=0; i<nbre; i++) 
      {
