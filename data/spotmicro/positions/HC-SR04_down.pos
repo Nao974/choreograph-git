@@ -1,0 +1,19 @@
+{
+  "category": "HC-SR04",
+  "name": "down",
+  "description": "\n\n\n\n\n",
+  "motors": {
+    "fl_shoulder": "90",
+    "fl_arm": "150",
+    "fl_wrist": "30",
+    "fr_shoulder": "90",
+    "fr_arm": "150",
+    "fr_wrist": "30",
+    "bl_shoulder": "90",
+    "bl_arm": "178",
+    "bl_wrist": "10",
+    "br_shoulder": "90",
+    "br_arm": "178",
+    "br_wrist": "10"
+  }
+}

@@ -1,5 +1,6 @@
 from tkinter.filedialog import *
 from tkinter.messagebox import *
+from tkinter import *
 from PIL import Image, ImageTk  # pip install pillow
 from servomboxe.mboxe_dummy import *
 import common.constants as g

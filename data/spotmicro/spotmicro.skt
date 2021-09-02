@@ -5,7 +5,7 @@
       {
 	  "type": "arduino_mega",
 	  "connection": "serial",
-      "address": ["COM4",500000],
+      "address": ["COM3",500000],
       "port": "pin",
       "sync_read": true,
       "attached_motorgroups": ["fl_paw", "fr_paw", "bl_paw", "br_paw"],

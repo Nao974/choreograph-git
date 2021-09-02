@@ -1,5 +1,6 @@
 from tkinter.filedialog import *
 import tkinter.ttk as ttk
+from tkinter import *
 from PIL import Image, ImageTk  # pip install pillow
 import os
 import time

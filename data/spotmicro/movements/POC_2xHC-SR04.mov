@@ -1,0 +1,20 @@
+{
+  "name": "POC_2xHC-SR04",
+  "duration": 250,
+  "functions": {
+    "I001": {
+      "function": "Direct",
+      "position": "HC-SR04_home",
+      "duration": 250,
+      "nb_step": 1
+    },
+    "I002": {
+      "function": "Direct",
+      "position": "HC-SR04_down",
+      "duration": 250,
+      "nb_step": 1
+    }
+  },
+  "id": "I003",
+  "file": "C:/Users/Fran\u00e7oisBoldoduck/OneDrive - AhMOA/!!! Robotique !!!/! Choreograph !/choreograph-git/data/spotmicro/movements/POC_2xHC-SR04.mov"
+}
