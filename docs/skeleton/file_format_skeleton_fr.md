@@ -91,6 +91,8 @@ serial, lan, onboard
 * **mg_alignment**: alignement des moteurs par "motorgroup" dans l'onglet "Squelette":  
 "h" pour horizontal, "v" pour vertical
 
+***Actuellement, seules les connections "serial" pour Arduino et "onboard" pour Py sont opérationnelles.***
+
 ## "motorgroups"
 
 Un "motorgroup" est un regroupement logique de servo-moteurs correspondant par exemple à une articulation ou un membre.  

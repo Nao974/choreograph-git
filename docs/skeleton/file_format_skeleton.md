@@ -91,6 +91,8 @@ serial, lan, onboard
 * **mg_alignment**: motor alignment by "motorgroup" in the "Skeleton" tab:
 "h" for horizontal, "v" for vertical
 
+***Currently, only the "serial" connections for Arduino and "onboard" for Py are operational.***
+
 ## "motorgroups"
 
 A "motorgroup" is a logical grouping of servo-motors corresponding for example to an articulation or a member.

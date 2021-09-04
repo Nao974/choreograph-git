@@ -71,7 +71,7 @@ lang_EN['Error while translating the skeleton'] = 'Error while translating the s
 lang_EN['Recalculate TRIMs'] = 'Recalculate TRIMs'
 lang_EN['Update Skeleton in memory'] = 'Update Skeleton in memory'
 lang_EN['default position - current'] = 'default position - current'
-lang_EN['The selected engines have been modified, update your json file then menu Skeleton-> Update'] = 'The selected engines have been modified, update your json file then menu Skeleton-> Update'
+lang_EN['Please update your JSON file manually (development in progress), then click in the "Skeleton-> Update" menu'] = 'Please update your JSON file manually (development in progress), then click in the "Skeleton-> Update" menu'
 
 lang_EN['Interactive'] = 'Interactive'
 lang_EN['Angle_limit'] = 'Angle_limit'

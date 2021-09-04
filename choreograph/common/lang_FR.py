@@ -70,7 +70,7 @@ lang_FR['Error while generating the Snapshot window'] = 'Erreur lors de la gén�
 lang_FR['Recalculate TRIMs'] = 'Recalcule des TRIMs'
 lang_FR['Update Skeleton in memory'] = 'MAJ du squelette en mémoire'
 lang_FR['default position - current'] = 'position par défaut - actuelle'
-lang_FR['The selected engines have been modified, update your json file then menu Skeleton-> Update'] = 'les moteurs selectionnés ont été modifiés, mettez à jour votre fichier json puis menu Squelette->MAJ'
+lang_FR['Please update your JSON file manually (development in progress), then click in the "Skeleton-> Update" menu'] = 'Merci de mettre à jour votre fichier JSON manuellement (développement en cours), puis cliquer dans le menu "Skeleton-> Update"'
 
 lang_FR['Interactive'] = 'Interactif'
 lang_FR['Angle_limit'] = 'Bornes'
